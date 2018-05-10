@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{block "title" .}}{{with .Title}}{{.}} - {{end}}{{.Site.Title}}{{end}}</title>
+    <meta name="description" content="{{ .Description }}">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,400i,700|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    {{block "header" .}}
+        {{ partial "header.html" .}}
+    {{end}}
+
+    {{block "main" .}}{{end}}
+
+    {{block "footer" .}}
+        {{partial "footer.html" .}}
+    {{end}}
+
+    {{block "scripts" .}}
+        {{ partial "scripts.html" .}}
+    {{end}}
+</body>
+</html>

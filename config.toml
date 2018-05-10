@@ -1,0 +1,16 @@
+baseURL = "http://danielrs.me/"
+languageCode = "en-us"
+title = "Daniel Rivas"
+
+sectionPagesMenu = "main"
+metaDataFormat = "toml"
+
+theme = "hairline"
+
+[params]
+author = "Daniel Rivas"
+githubUser = "danielrs"
+
+[params.tagline]
+title = "Software Developer"
+comments = ["Hi", "I am Daniel", "I design", "I make programs", "I am a..", "Software Developer"]

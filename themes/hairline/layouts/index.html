@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+    <div class="mega-brand">
+        <div class="mega-brand__container">
+            <div class="mega-brand__header">
+                <h1>{{.Site.Title}}</h1>
+                {{with .Site.Params.Tagline }}
+                    <code id="tagline">{{.title}}</code>
+                    {{with .comments}}
+                        <ul id="tagline-comments">
+                            {{range .}}<li>{{.}}</li>{{end}}
+                        </ul>
+                    {{end}}
+                {{end}}
+            </div>
+        </div>
+    </div>
+
+{{ end }}
