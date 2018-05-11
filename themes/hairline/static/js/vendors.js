@@ -206,6 +206,5 @@
   connect();
 })();
 /* jshint ignore:end */
-;"use strict";
 ;
 //# sourceMappingURL=vendors.js.map

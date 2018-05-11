@@ -1,0 +1,24 @@
+// Colors
+
+$color-white: #fff;
+$color-light-gray: darken($color-white, 4%);
+$color-gray: darken($color-white, 8%);
+$color-dark-gray: darken($color-white, 16%);
+
+$color-body: #444;
+$color-link: #4078c0;
+$color-link-hover: $color-link;
+$color-link-visited: lighten($color-link, 10%);
+
+// Animations
+
+$animation-very-slow: 1s;
+$animation-slow: .500s;
+$animation-normal: .250s;
+$animation-fast: .125s;
+$animation-very-fast: .100s;
+
+// Constants
+
+$magic-number: 1.5em;
+$golden-ratio: 1.61803398875;

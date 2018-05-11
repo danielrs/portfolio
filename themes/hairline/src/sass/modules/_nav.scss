@@ -1,0 +1,51 @@
+nav[role="navigation"] {
+    @include clearfix;
+
+    border-bottom: 1px solid #aaa;
+
+    ul, li {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__brand {
+        float: left;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        padding: .5em;
+
+        font-family: 'Pacifico';
+        text-decoration: none;
+        color: #444;
+    }
+
+    .nav__list {
+        float: right;
+
+        a.nav__list__item {
+            font-family: unquote(map-get($sansseriftype, font-family));
+            display: inline-block;
+            line-height: 1.25em;
+            padding: 1.25em 1em;
+
+            color: $color-dark-gray;
+            transition: color $animation-fast;
+
+            &:hover {
+                color: darken($color-dark-gray, 10%);
+            }
+        }
+
+        a.nav__list__active, a.nav__list__active:hover {
+            color: $color-body;
+        }
+
+        li:last-child a {
+            padding-right: 3em;
+        }
+    }
+}
+
+

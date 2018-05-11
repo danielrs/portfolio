@@ -2,14 +2,15 @@
 exports.files = {
   javascripts: {
     joinTo: {
-      'js/vendors.js': /^src\/vendor/,
-      'js/app.js': /^src\/app/
+      'js/vendors.js': /^node_modules|src\/vendor/,
+      'js/app.js': /^src\/js/
     }
   },
 
   stylesheets: {
     joinTo: {
-      'css/app.css': /^src/
+      'css/vendor.css': /^node_modules|src\/vendor/,
+      'css/style.css': /^src\/sass/
     }
   }
 };

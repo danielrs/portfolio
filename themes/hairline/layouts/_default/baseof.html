@@ -5,11 +5,13 @@
     <title>{{block "title" .}}{{with .Title}}{{.}} - {{end}}{{.Site.Title}}{{end}}</title>
     <meta name="description" content="{{ .Description }}">
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,400i,700|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lato:400,400i,700|Merriweather:400,400i,700|Pacifico" rel="stylesheet">
+    <link href="/css/vendor.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
     <script src="/js/app.js"></script>
 </head>
-<body>
+<body {{if .IsHome}}class="home"{{end}}>
     {{block "header" .}}
         {{ partial "header.html" .}}
     {{end}}

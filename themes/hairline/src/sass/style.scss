@@ -1,0 +1,15 @@
+@import "sassline-base";
+
+@import "base/settings";
+@import "base/mixins";
+@import "base/typography";
+
+@import "modules/index";
+@import "modules/nav";
+@import "modules/brand";
+@import "modules/footer";
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+}

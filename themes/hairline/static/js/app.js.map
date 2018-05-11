@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"static/js/app.js"}
+{"version":3,"sources":["src/js/index.js"],"names":["console","log"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAAA,QAAQC,GAAR,CAAY,OAAZ","file":"static/js/app.js","sourcesContent":["console.log(\"Hello\")\n"]}

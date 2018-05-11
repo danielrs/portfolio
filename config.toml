@@ -1,6 +1,7 @@
 baseURL = "http://danielrs.me/"
 languageCode = "en-us"
 title = "Daniel Rivas"
+copyright = "Daniel Rivas"
 
 sectionPagesMenu = "main"
 metaDataFormat = "toml"
