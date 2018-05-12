@@ -15,3 +15,13 @@ githubUser = "danielrs"
 [params.tagline]
 title = "Software Developer"
 comments = ["Hi", "I am Daniel", "I design", "I make programs", "I am a..", "Software Developer"]
+
+[[params.social]]
+url = "https://github.com/danielrs"
+title = "GitHub"
+icon = "fa-github"
+
+[[params.social]]
+url = "https://www.linkedin.com/in/ersdaniel"
+title = "LinkedIn"
+icon = "fa-linkedin"

@@ -5,12 +5,17 @@
     min-height: 10em;
     padding: 2em;
 
+    overflow: hidden;
+
+    h1 {
+        white-space: nowrap;
+    }
+
     .mega-brand__container {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 2em;
     }
 
     .mega-brand__header {
@@ -21,12 +26,6 @@
             font-family: 'Pacifico';
             margin-bottom: .5em;
         }
-
-        ul, li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
     }
 
     .mega-brand__content {
@@ -34,11 +33,24 @@
 }
 
 #tagline {
+    display: inline-block;
     font-size: 2em;
+    line-height: 1em;
+    margin-bottom: .5em;
 }
 
 #tagline-comments {
     display: none;
     font-family: monospace;
     font-size: 1.5em;
+}
+
+ul.social {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: $magic-number;
+        white-space: nowrap;
+    }
 }

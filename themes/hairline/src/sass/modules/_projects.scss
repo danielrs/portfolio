@@ -1,0 +1,21 @@
+.project-list {
+    @include clearfix;
+    margin-top: $magic-number * 2;
+
+    .project-card {
+        @include breakpoint('break-1') {
+            @include column(1/2, $cycle: 2);
+        };
+    }
+}
+
+.project-card {
+    border: 1px solid $color-dark-gray;
+    padding: $magic-number/2 $magic-number;
+    margin-bottom: $magic-number;
+    border-radius: 4px;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1em;
+    }
+}

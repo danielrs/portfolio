@@ -5,22 +5,51 @@
             <div class="mega-brand__header">
                 <h1>{{.Site.Title}}</h1>
                 {{with .Site.Params.Tagline }}
+
                     <code id="tagline">{{.title}}</code>
                     {{with .comments}}
                         <ul id="tagline-comments">
                             {{range .}}<li>{{.}}</li>{{end}}
                         </ul>
                     {{end}}
+
                 {{end}}
+
+                <br />
+
+                {{with .Site.Params.Social}}
+                    <ul class="social">
+                    {{range .}}
+                        <li>
+                            <a href="{{.url}}" title="{{.title}}">
+                                {{with .icon}}
+                                <i class="fab {{.}}"></i>
+                                {{end}}
+                                {{.title}}
+                            </a>
+                        </li>
+                    {{end}}
+                    </ul>
+                {{end}}
+
             </div>
         </div>
     </div>
 
-    <main class="main typeset">
+    <main class="main container typeset">
         {{.Content}}
 
-        <h3>Projects</h3>
+        <h3>Preferred projects</h3>
+        <div class="project-list">
+        {{range first 4 (where .Data.Pages "Section" "projects")}}
+                {{partial "projects/card" .}}
+        {{end}}
+         </div>
+
         <h3>Latest posts</h3>
+        {{range first 4 (where .Data.Pages.ByDate "Section" "blog")}}
+            <li>{{.Title}}</li>
+        {{end}}
     </main>
 
 {{ end }}

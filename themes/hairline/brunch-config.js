@@ -22,6 +22,21 @@ exports.paths = {
 
 exports.plugins = {
   babel: {presets: ['latest', 'react']},
-  postcss: {processors: [require('autoprefixer'), require('precss')]},
+
+  postcss: {
+    processors: [
+      require('autoprefixer')
+    ]
+  },
+
+  sass: {
+    options: {
+      includePaths: [].concat(
+        'node_modules/jeet',
+        'node_modules/sassline/assets/sass',
+      )
+    }
+  },
+
   hugo: {sourceFolder: './'}
 };

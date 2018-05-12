@@ -1,21 +1,10 @@
 ---
 title: "Gom"
-date: 2018-05-10T00:09:23-05:00
+date: 2018-05-11T21:50:30-05:00
+description: API mocking and data server.
+tags: ['go', 'api', 'generator']
+
+project-url: https://github.com/danielrs/gom
 ---
 
-My gom project.
-
-With another paragraph.
-
-And go code:
-
-{{< highlight go >}}
-package main
-
-import "fmt"
-
-func main() {
-    a := 1 + 1
-    fmt.Println(a)
-}
-{{< / highlight >}}
+Go Mocking is a tool for API mocking and dummy data server that uses RAML (Rest API Modelling Language) for setup. Useful for prototyping.

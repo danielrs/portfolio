@@ -1,0 +1,5 @@
+.container {
+    max-width: map-get($breakpoints, break-3);
+    margin: 0 auto;
+    padding: 0 $magic-number;
+}

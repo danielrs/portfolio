@@ -1,6 +1,10 @@
 nav[role="navigation"] {
     @include clearfix;
 
+    $nav-line-height: 1.5em;
+    $nav-padding: .5em;
+    $nav-height: $nav-line-height + $nav-padding * 2;
+
     border-bottom: 1px solid #aaa;
 
     ul, li {
@@ -12,9 +16,9 @@ nav[role="navigation"] {
 
     .nav__brand {
         float: left;
-        font-size: 1.5em;
-        line-height: 1.5em;
-        padding: .5em;
+        font-size: $nav-line-height;
+        line-height: $nav-line-height;
+        padding: $nav-padding;
 
         font-family: 'Pacifico';
         text-decoration: none;
@@ -27,8 +31,8 @@ nav[role="navigation"] {
         a.nav__list__item {
             font-family: unquote(map-get($sansseriftype, font-family));
             display: inline-block;
-            line-height: 1.25em;
-            padding: 1.25em 1em;
+            line-height: $nav-height / 2;
+            padding: ($nav-height / 2) 1em;
 
             color: $color-dark-gray;
             transition: color $animation-fast;
