@@ -147,15 +147,217 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("src/js/index.js", function(exports, require, module) {
+require.register("js/app.js", function(exports, require, module) {
+'use strict';
+
+var _loader = require('./views/loader');
+
+var _loader2 = _interopRequireDefault(_loader);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function handleDOMContentLoaded() {
+  var viewName = document.getElementsByTagName('body')[0].getAttribute('data-js-view-name');
+  var ViewClass = (0, _loader2.default)(viewName);
+  var view = new ViewClass();
+  view.mount();
+  window.currentView = view;
+}
+
+function handleDOMContentUnload() {
+  window.currentView.unmount();
+  wundow.cunrrentView = null;
+}
+
+handleDOMContentLoaded();
+window.addEventListener('unload', handleDOMContentUnload, false);
+});
+
+require.register("js/views/blog.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _main = require('./main');
+
+var _main2 = _interopRequireDefault(_main);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BlogView = function (_MainView) {
+  _inherits(BlogView, _MainView);
+
+  function BlogView() {
+    _classCallCheck(this, BlogView);
+
+    return _possibleConstructorReturn(this, (BlogView.__proto__ || Object.getPrototypeOf(BlogView)).apply(this, arguments));
+  }
+
+  return BlogView;
+}(_main2.default);
+
+exports.default = BlogView;
+});
+
+;require.register("js/views/home.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _main = require('./main');
+
+var _main2 = _interopRequireDefault(_main);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HomeView = function (_MainView) {
+  _inherits(HomeView, _MainView);
+
+  function HomeView() {
+    _classCallCheck(this, HomeView);
+
+    return _possibleConstructorReturn(this, (HomeView.__proto__ || Object.getPrototypeOf(HomeView)).apply(this, arguments));
+  }
+
+  _createClass(HomeView, [{
+    key: 'mount',
+    value: function mount() {
+      var sentences = [].slice.call(document.querySelectorAll('#tagline-comments li')).map(function (n) {
+        return n.innerHTML;
+      });
+
+      Typing.new('#tagline', {
+        sentences: sentences,
+        sentenceDelay: 1000,
+        ignorePrefix: true
+      });
+    }
+  }]);
+
+  return HomeView;
+}(_main2.default);
+
+exports.default = HomeView;
+});
+
+;require.register("js/views/loader.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = loadView;
+
+var _home = require('./home');
+
+var _home2 = _interopRequireDefault(_home);
+
+var _projects = require('./projects');
+
+var _projects2 = _interopRequireDefault(_projects);
+
+var _blog = require('./blog');
+
+var _blog2 = _interopRequireDefault(_blog);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var views = {
+  HomeView: _home2.default,
+  ProjectsView: _projects2.default,
+  BlogView: _blog2.default
+};
+
+function loadView(viewName) {
+  return views[viewName] || _home2.default;
+}
+});
+
+;require.register("js/views/main.js", function(exports, require, module) {
 "use strict";
 
-console.log("Hello");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MainView = function () {
+  function MainView() {
+    _classCallCheck(this, MainView);
+  }
+
+  _createClass(MainView, [{
+    key: "mount",
+    value: function mount() {}
+  }, {
+    key: "unmount",
+    value: function unmount() {}
+  }]);
+
+  return MainView;
+}();
+
+exports.default = MainView;
+});
+
+;require.register("js/views/projects.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _main = require('./main');
+
+var _main2 = _interopRequireDefault(_main);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectsView = function (_MainView) {
+  _inherits(ProjectsView, _MainView);
+
+  function ProjectsView() {
+    _classCallCheck(this, ProjectsView);
+
+    return _possibleConstructorReturn(this, (ProjectsView.__proto__ || Object.getPrototypeOf(ProjectsView)).apply(this, arguments));
+  }
+
+  return ProjectsView;
+}(_main2.default);
+
+exports.default = ProjectsView;
 });
 
 ;require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
 
-
+require('js/app');
 //# sourceMappingURL=app.js.map

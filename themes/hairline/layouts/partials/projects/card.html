@@ -1,4 +1,18 @@
 <section class="project-card">
-    <h1><a href="{{.URL}}" title="{{.Title}}">{{.Title}}</a></h1>
+    <h1>{{.Title}}</h1>
+
     <p>{{.Description}}</p>
+
+    {{with .Params.Tags}}
+        <div class="project-card__tags">
+            {{range .}}<span class="tag">{{.}}</span>{{end}}
+        </div>
+    {{end}}
+
+    <div class="project-card__links">
+        <a href="{{.URL}}" title="Project details">See details</a>
+        {{with .Params.ProjectUrl}}
+            <a href="{{.}}" title="Project homepage">Homepage</a>
+        {{end}}
+    </div>
 </section>

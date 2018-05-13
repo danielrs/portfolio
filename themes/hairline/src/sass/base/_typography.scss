@@ -9,3 +9,19 @@ strong {
 em {
     font-style: italic;
 }
+
+.monolink {
+    color: lighten($color-body, 20%);
+
+    &:visited {
+        color: lighten($color-body, 25%);
+    }
+
+    &:hover {
+        color: lighten($color-body, 10%);
+    }
+
+    &:active {
+        color: lighten($color-body, 0%);
+    }
+}

@@ -1,6 +1,6 @@
 .project-list {
     @include clearfix;
-    margin-top: $magic-number * 2;
+    margin-top: $magic-number;
 
     .project-card {
         @include breakpoint('break-1') {
@@ -11,11 +11,42 @@
 
 .project-card {
     border: 1px solid $color-dark-gray;
-    padding: $magic-number/2 $magic-number;
+    padding: $magic-number $magic-number;
     margin-bottom: $magic-number;
     border-radius: 4px;
 
+    font-family: unquote(map-get($sansseriftype, font-family)) !important;
+
     h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
         font-size: 1em;
+        line-height: 1em;
+    }
+
+    p {
+        margin: $magic-number/2 0 0 0;
+    }
+
+    .project-card__tags {
+        margin-top: $magic-number/2;
+
+        .tag {
+            font-size: .8em;
+        }
+    }
+
+    .project-card__links {
+        margin-top: $magic-number/1.5;
+
+        a {
+            @extend .monolink;
+            display: inline-block;
+            margin-right: 1em;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
     }
 }

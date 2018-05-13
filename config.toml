@@ -19,9 +19,15 @@ comments = ["Hi", "I am Daniel", "I design", "I make programs", "I am a..", "Sof
 [[params.social]]
 url = "https://github.com/danielrs"
 title = "GitHub"
-icon = "fa-github"
+icon = "fab fa-github"
 
 [[params.social]]
 url = "https://www.linkedin.com/in/ersdaniel"
 title = "LinkedIn"
-icon = "fa-linkedin"
+icon = "fab fa-linkedin"
+
+[[params.social]]
+url = "/resume.pdf"
+title = "Résumé"
+icon = "fas fa-file-alt"
+blank = true

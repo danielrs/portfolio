@@ -3,6 +3,10 @@
     <div class="mega-brand">
         <div class="mega-brand__container">
             <div class="mega-brand__header">
+                {{with .Resources.GetMatch "avatar*"}}
+                    <img id="avatar" src="{{.Permalink}}" alt="{{.Name}}" width=100% height=100%/>
+                {{end}}
+
                 <h1>{{.Site.Title}}</h1>
                 {{with .Site.Params.Tagline }}
 
@@ -21,11 +25,11 @@
                     <ul class="social">
                     {{range .}}
                         <li>
-                            <a href="{{.url}}" title="{{.title}}">
+                            <a href="{{.url}}" title="{{.title}}" {{if .blank}}target="_blank"{{end}}>
                                 {{with .icon}}
-                                <i class="fab {{.}}"></i>
+                                <i class="{{.}}"></i>
                                 {{end}}
-                                {{.title}}
+                                {{.title}}{{if .blank}}&#x21B1;{{end}}
                             </a>
                         </li>
                     {{end}}

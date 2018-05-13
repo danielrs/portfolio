@@ -1,0 +1,19 @@
+.tag {
+    display: inline-block;
+    margin: 0 .5em .5em 0;
+    padding: .5em .750em;
+    min-width: 50px;
+    border-radius: 5px;
+
+    font-size: .9em;
+    line-height: 1em;
+    font-family: unquote(map-get($monospacetype, font-family));
+    text-align: center;
+    color: lighten($color-link, 20%);
+
+    background: lighten($color-link, 40%);
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

@@ -2,22 +2,30 @@
 exports.files = {
   javascripts: {
     joinTo: {
-      'js/vendors.js': /^node_modules|src\/vendor/,
-      'js/app.js': /^src\/js/
+      'js/vendor.js': /^bower_components|node_modules|vendor/,
+    },
+    entryPoints: {
+      'js/app.js': 'js/app.js'
     }
   },
 
   stylesheets: {
     joinTo: {
-      'css/vendor.css': /^node_modules|src\/vendor/,
-      'css/style.css': /^src\/sass/
+      'css/vendor.css': /^bower_components|node_modules|vendor/,
+      'css/style.css': /^sass/
     }
   }
 };
 
 exports.paths = {
-  public: 'static',
-  watched: ['src']
+  public: '../static',
+  watched: ['js', 'sass', 'vendor']
+}
+
+exports.modules = {
+  autoRequire: {
+    'js/app.js': ['js/app']
+  }
 }
 
 exports.plugins = {

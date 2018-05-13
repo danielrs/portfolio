@@ -22,7 +22,7 @@
         text-align: center;
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             font-family: 'Pacifico';
             margin-bottom: .5em;
         }
@@ -32,9 +32,16 @@
     }
 }
 
+#avatar {
+    width: 7em;
+    height: 7em;
+    margin-bottom: $magic-number;
+    border-radius: 1em;
+}
+
 #tagline {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1em;
     margin-bottom: .5em;
 }
@@ -43,6 +50,18 @@
     display: none;
     font-family: monospace;
     font-size: 1.5em;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  45% { opacity: 1; }
+  50% { opacity: 0; }
+  95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.typingjs__caret {
+  animation: blink 1s linear 0s infinite;
 }
 
 ul.social {

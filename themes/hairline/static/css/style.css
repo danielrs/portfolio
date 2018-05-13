@@ -790,10 +790,34 @@ strong {
 em {
   font-style: italic; }
 
+.monolink, .project-card .project-card__links a {
+  color: #777777; }
+  .monolink:visited, .project-card .project-card__links a:visited {
+    color: #848484; }
+  .monolink:hover, .project-card .project-card__links a:hover {
+    color: #5e5e5e; }
+  .monolink:active, .project-card .project-card__links a:active {
+    color: #444444; }
+
 .container {
   max-width: 1024;
   margin: 0 auto;
   padding: 0 1.5em; }
+
+.tag {
+  display: inline-block;
+  margin: 0 .5em .5em 0;
+  padding: .5em .750em;
+  min-width: 50px;
+  border-radius: 5px;
+  font-size: .9em;
+  line-height: 1em;
+  font-family: "Inconsolata", Menlo, monospace;
+  text-align: center;
+  color: #8daed9;
+  background: #d9e4f3; }
+  .tag:last-of-type {
+    margin-right: 0; }
 
 .mega-brand {
   position: relative;
@@ -812,13 +836,19 @@ em {
   .mega-brand .mega-brand__header {
     text-align: center; }
     .mega-brand .mega-brand__header h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       font-family: 'Pacifico';
       margin-bottom: .5em; }
 
+#avatar {
+  width: 7em;
+  height: 7em;
+  margin-bottom: 1.5em;
+  border-radius: 1em; }
+
 #tagline {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1em;
   margin-bottom: .5em; }
 
@@ -826,6 +856,21 @@ em {
   display: none;
   font-family: monospace;
   font-size: 1.5em; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  45% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  95% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.typingjs__caret {
+  animation: blink 1s linear 0s infinite; }
 
 ul.social {
   list-style: none; }
@@ -835,6 +880,8 @@ ul.social {
     white-space: nowrap; }
 
 #footer {
+  margin-top: 3em;
+  padding: 1.5em 0;
   text-align: center;
   font-family: "Lato", Helvetica, sans-serif;
   font-style: italic; }
@@ -844,7 +891,7 @@ html, body {
   padding: 0; }
 
 nav[role="navigation"] {
-  border-bottom: 1px solid #aaa; }
+  border-bottom: 1px solid #ebebeb; }
   nav[role="navigation"]:after {
     content: "";
     display: table;
@@ -863,8 +910,10 @@ nav[role="navigation"] {
     text-decoration: none;
     color: #444; }
   nav[role="navigation"] .nav__list {
-    float: right; }
+    float: right;
+    margin-right: 2em; }
     nav[role="navigation"] .nav__list a.nav__list__item {
+      position: relative;
       font-family: "Lato", Helvetica, sans-serif;
       display: inline-block;
       line-height: 1.25em;
@@ -875,11 +924,18 @@ nav[role="navigation"] {
         color: #bdbdbd; }
     nav[role="navigation"] .nav__list a.nav__list__active, nav[role="navigation"] .nav__list a.nav__list__active:hover {
       color: #444; }
-    nav[role="navigation"] .nav__list li:last-child a {
-      padding-right: 3em; }
+    nav[role="navigation"] .nav__list a.nav__list__active:after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 4px;
+      top: 100%;
+      left: 50%;
+      background: #444;
+      transform: translateX(-50%); }
 
 .project-list {
-  margin-top: 3em; }
+  margin-top: 1.5em; }
   .project-list:after {
     content: "";
     display: table;
@@ -908,11 +964,28 @@ nav[role="navigation"] {
 
 .project-card {
   border: 1px solid #d6d6d6;
-  padding: 0.75em 1.5em;
+  padding: 1.5em 1.5em;
   margin-bottom: 1.5em;
-  border-radius: 4px; }
+  border-radius: 4px;
+  font-family: "Lato", Helvetica, sans-serif !important; }
   .project-card h1, .project-card h2, .project-card h3, .project-card h4, .project-card h5, .project-card h6 {
-    font-size: 1em; }
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em; }
+  .project-card p {
+    margin: 0.75em 0 0 0; }
+  .project-card .project-card__tags {
+    margin-top: 0.75em; }
+    .project-card .project-card__tags .tag {
+      font-size: .8em; }
+  .project-card .project-card__links {
+    margin-top: 1em; }
+    .project-card .project-card__links a {
+      display: inline-block;
+      margin-right: 1em; }
+      .project-card .project-card__links a:last-of-type {
+        margin-right: 0; }
 
 .main {
   max-width: 960px;

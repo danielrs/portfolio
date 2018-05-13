@@ -5,7 +5,7 @@ nav[role="navigation"] {
     $nav-padding: .5em;
     $nav-height: $nav-line-height + $nav-padding * 2;
 
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid $color-gray;
 
     ul, li {
         list-style: none;
@@ -27,8 +27,10 @@ nav[role="navigation"] {
 
     .nav__list {
         float: right;
+        margin-right: 2em;
 
         a.nav__list__item {
+            position: relative;
             font-family: unquote(map-get($sansseriftype, font-family));
             display: inline-block;
             line-height: $nav-height / 2;
@@ -46,8 +48,18 @@ nav[role="navigation"] {
             color: $color-body;
         }
 
-        li:last-child a {
-            padding-right: 3em;
+        a.nav__list__active:after {
+            content: '';
+            position: absolute;
+
+            width: 40%;
+            height: 4px;
+
+            top: 100%;
+            left: 50%;
+
+            background: $color-body;
+            transform: translateX(-50%);
         }
     }
 }

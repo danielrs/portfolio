@@ -1,0 +1,25 @@
+{
+  "name": "harline",
+  "description": "Brunch.io application",
+  "main": "",
+  "authors": [
+    "Daniel Rivas"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hugo",
+    "hugo-theme"
+  ],
+  "homepage": "https://github.com/danielrs/portfolio",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typing.js": "^0.4.4"
+  }
+}
