@@ -3,6 +3,6 @@
     padding: $magic-number 0;
 
     text-align: center;
-    font-family: unquote(map-get($sansseriftype, font-family));
+    font-family: map-get($fonts, sans-serif);
     font-style: italic;
 }

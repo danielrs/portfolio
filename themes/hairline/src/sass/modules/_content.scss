@@ -7,7 +7,7 @@
 
     font-size: .9em;
     line-height: 1em;
-    font-family: unquote(map-get($monospacetype, font-family));
+    font-family: map-get($fonts, monospace);
     text-align: center;
     color: lighten($color-link, 20%);
 

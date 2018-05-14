@@ -10,6 +10,13 @@ $color-link: #4078c0;
 $color-link-hover: $color-link;
 $color-link-visited: lighten($color-link, 10%);
 
+// Fonts
+$fonts: (
+    serif: 'MerryWeather',
+    sans-serif: 'Lato',
+    monospace: 'Inconsolata'
+) !default;
+
 // Animations
 
 $animation-very-slow: 1s;
@@ -17,6 +24,16 @@ $animation-slow: .500s;
 $animation-normal: .250s;
 $animation-fast: .125s;
 $animation-very-fast: .100s;
+
+// Break points
+
+$breakpoints: (
+    break-0: 0,
+    break-1: 640,
+    break-2: 800,
+    break-3: 1024,
+    break-4: 1600
+) !default;
 
 // Constants
 

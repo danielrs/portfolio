@@ -42,6 +42,7 @@ exports.plugins = {
       includePaths: [].concat(
         'node_modules/jeet',
         'node_modules/sassline/assets/sass',
+        'node_modules/gutenberg-web-type/src/style'
       )
     }
   },

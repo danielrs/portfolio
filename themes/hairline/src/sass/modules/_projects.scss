@@ -15,7 +15,7 @@
     margin-bottom: $magic-number;
     border-radius: 4px;
 
-    font-family: unquote(map-get($sansseriftype, font-family)) !important;
+    font-family: map-get($fonts, sans-serif) !important;
 
     h1, h2, h3, h4, h5, h6 {
         margin: 0;

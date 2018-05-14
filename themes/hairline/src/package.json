@@ -6,8 +6,7 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
-    "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "postinstall": "./node_modules/.bin/bower install"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
@@ -15,8 +14,10 @@
     "babel-brunch": "^6.1.1",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "bower": "^1.8.4",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "gutenberg-web-type": "^1.2.3",
     "hugo-brunch": "^1.10.0",
     "jeet": "^7.2.0",
     "postcss-brunch": "^2.1.0",
