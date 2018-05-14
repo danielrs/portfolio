@@ -522,11 +522,12 @@ function makePrefixTyper(current, target) {
 });
 
 ;require.register("___globals___", function(exports, require, module) {
-  
+
 });})();require('___globals___');
 
 require('src/typing');
 //# sourceMappingURL=typing.js.map
+
 ;'use strict';
 
 /* jshint ignore:start */

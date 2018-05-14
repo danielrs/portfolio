@@ -3,6 +3,7 @@ title: "Botellier"
 date: 2018-05-11T21:51:40-05:00
 description: A distributed key-value data store.
 tags: ['java', 'kotlin', 'db', 'in-memory-db']
+weight: 2
 
 projectUrl: https://github.com/danielrs/botellier
 ---

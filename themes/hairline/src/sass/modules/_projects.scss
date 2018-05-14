@@ -29,7 +29,7 @@
     }
 
     .project-card__tags {
-        margin-top: $magic-number/2;
+        margin: $magic-number/2 0 0;
 
         .tag {
             font-size: .8em;
@@ -37,16 +37,19 @@
     }
 
     .project-card__links {
-        margin-top: $magic-number/1.5;
+        margin: $magic-number/1.5 0 0;
 
         a {
             @extend .monolink;
             display: inline-block;
-            margin-right: 1em;
+            margin: 0 1em 0 0;
 
             &:last-of-type {
                 margin-right: 0;
             }
         }
     }
+}
+
+.project-post {
 }

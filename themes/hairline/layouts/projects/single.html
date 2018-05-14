@@ -1,4 +1,19 @@
 {{define "main"}}
-    <h1>{{.Title}}</h1>
-    {{.Content}}
+    <main class="container">
+        <article class="project-post">
+            {{$datetime := .Date.Format "2006-01-02"}}
+            <header>
+                <h1>{{.Title}}</h1>
+                <time datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
+                {{with .Params.Tags}}
+                    {{range .}}
+                        <span class="tag">{{.}}</span>
+                    {{end}}
+                {{end}}
+            </header>
+            <main>
+                {{.Content}}
+            </main>
+        </article>
+    </main>
 {{end}}

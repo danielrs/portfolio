@@ -14,16 +14,16 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 /* Font themes
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   .floatLeft {
     float: left; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   .floatCenter {
     margin-left: auto;
     margin-right: auto; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   .floatRight {
     float: right; } }
 
@@ -33,32 +33,32 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
   background-position: left top;
   background-repeat: repeat;
-  background-size: 100% 26px;
-  background-size: 100% 1.625rem; }
-  @media screen and (min-width: 40em) {
+  background-size: 100% 31px;
+  background-size: 100% 1.61458rem; }
+  @media screen and (min-width: 105% em) {
     .grid, .grid-double {
-      background-size: 100% 31px;
-      background-size: 100% 1.72222rem; } }
+      background-size: 100% 35px;
+      background-size: 100% 1.68269rem; } }
 
 .grid-double {
-  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13px, rgba(0, 170, 255, 0.2) 13px, transparent 14px, transparent 26px); }
-  @media screen and (min-width: 40em) {
+  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px); }
+  @media screen and (min-width: 105% em) {
     .grid-double {
-      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px); } }
+      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 17.5px, rgba(0, 170, 255, 0.2) 17.5px, transparent 18.5px, transparent 35px); } }
 
 .toggleWrapper {
-  display: block;
+  display: none;
   position: fixed;
-  top: 26px;
-  right: 26px;
+  top: 31px;
+  right: 31px;
   background-color: #231F20;
   border-radius: 25px;
   padding: 0 10px 0 20px;
   height: 32px; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     .toggleWrapper {
-      right: 31px;
-      top: 31px; } }
+      right: 35px;
+      top: 35px; } }
 
 .btnToggleGrid {
   background: url("../../assets/images/grid-icons.png") top right no-repeat;
@@ -73,10 +73,10 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   text-transform: uppercase;
   font-weight: 700;
   color: #fff; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     .btnToggleGrid {
-      top: 31px;
-      right: 31px; } }
+      top: 35px;
+      right: 35px; } }
   .btnToggleGrid:hover {
     color: #fff; }
   .btnToggleGrid:active {
@@ -93,7 +93,7 @@ aside {
 
 /* Defaults
    ========================================================================== */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   body,
   html {
     margin: 0;
@@ -102,30 +102,30 @@ aside {
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
-  font-size: 100%;
+  font-size: 19.2px;
+  font-size: 120%;
   font-family: Merriweather, Georgia, serif;
   color: #222;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     html {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+      font-size: 20.8px;
+      font-size: 1.3rem; } }
 
 * {
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin: 0px 0px 26px;
-  margin: 0rem 0rem 1.625rem; }
-  @media screen and (min-width: 40em) {
+  line-height: 31px;
+  line-height: 1.61458rem;
+  margin: 0px 0px 31px;
+  margin: 0rem 0rem 1.61458rem; }
+  @media screen and (min-width: 105% em) {
     * {
-      line-height: 31px;
-      line-height: 1.72222rem;
-      margin-bottom: 31px;
-      margin-bottom: 1.72222rem;
-      max-width: 630px;
-      max-width: 35rem;
+      line-height: 35px;
+      line-height: 1.68269rem;
+      margin-bottom: 35px;
+      margin-bottom: 1.68269rem;
+      max-width: 2080%px;
+      max-width: 100%rem;
       margin-left: auto;
       margin-right: auto; } }
 
@@ -173,10 +173,10 @@ article {
   display: block;
   margin: 0 auto;
   width: 80%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     article {
-      max-width: 945px;
-      max-width: 52.5rem; } }
+      max-width: 3120%px;
+      max-width: 150%rem; } }
 
 audio {
   display: inline-block;
@@ -199,13 +199,13 @@ samp {
   font-family: monospace, monospace; }
 
 code {
-  padding: 26px;
-  padding: 1.625rem;
+  padding: 31px;
+  padding: 1.61458rem;
   display: block; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     code {
-      padding: 31px;
-      padding: 1.72222rem; } }
+      padding: 35px;
+      padding: 1.68269rem; } }
 
 details {
   display: block; }
@@ -214,191 +214,191 @@ summary {
   display: block; }
 
 figcaption {
-  line-height: 26px;
-  line-height: 1.625rem;
+  line-height: 31px;
+  line-height: 1.61458rem;
   color: #222;
   display: block;
   font-size: .8125rem;
   font-style: italic;
   margin-bottom: 0;
   text-align: center; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     figcaption {
-      line-height: 31px;
-      line-height: 1.72222rem;
+      line-height: 35px;
+      line-height: 1.68269rem;
       margin-bottom: 0; } }
 
 figure {
   display: block; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   figure.floatLeft,
   figure.floatRight {
-    max-width: 315px;
-    max-width: 17.5rem;
-    padding: 0px 31px;
-    padding: 0rem 1.72222rem; } }
+    max-width: 1040%px;
+    max-width: 50%rem;
+    padding: 0px 35px;
+    padding: 0rem 1.68269rem; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   figure.floatLeft blockquote,
   figure.floatRight blockquote {
     padding: 0px;
     padding: 0rem;
     text-align: left; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   figure.floatLeft blockquote p,
   figure.floatRight blockquote p {
-    font-size: 19.2px;
+    font-size: 23.04px;
     font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.72222rem; } }
+    line-height: 35px;
+    line-height: 1.68269rem; } }
 
 /* Headings
    ========================================================================== */
 h1 {
-  font-size: 40px;
+  font-size: 48px;
   font-size: 2.5rem;
-  line-height: 52px;
-  line-height: 3.25rem;
-  margin-top: 104px;
-  margin-top: 6.5rem;
-  margin-bottom: 26px;
-  margin-bottom: 1.625rem; }
+  line-height: 62px;
+  line-height: 3.22917rem;
+  margin-top: 124px;
+  margin-top: 6.45833rem;
+  margin-bottom: 31px;
+  margin-bottom: 1.61458rem; }
 
 h2 {
-  font-size: 27px;
+  font-size: 32.4px;
   font-size: 1.6875rem;
-  line-height: 39px;
-  line-height: 2.4375rem;
-  margin-top: 65px;
-  margin-top: 4.0625rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8125rem; }
+  line-height: 46.5px;
+  line-height: 2.42188rem;
+  margin-top: 77.5px;
+  margin-top: 4.03646rem;
+  margin-bottom: 15.5px;
+  margin-bottom: 0.80729rem; }
 
 h3 {
-  font-size: 22px;
+  font-size: 26.4px;
   font-size: 1.375rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin-top: 52px;
-  margin-top: 3.25rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8125rem; }
+  line-height: 31px;
+  line-height: 1.61458rem;
+  margin-top: 62px;
+  margin-top: 3.22917rem;
+  margin-bottom: 15.5px;
+  margin-bottom: 0.80729rem; }
 
 h4 {
-  font-size: 19.2px;
+  font-size: 23.04px;
   font-size: 1.2rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin-top: 39px;
-  margin-top: 2.4375rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8125rem; }
+  line-height: 31px;
+  line-height: 1.61458rem;
+  margin-top: 46.5px;
+  margin-top: 2.42188rem;
+  margin-bottom: 15.5px;
+  margin-bottom: 0.80729rem; }
 
 h5 {
-  font-size: 16px;
+  font-size: 19.2px;
   font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin-top: 65px;
-  margin-top: 4.0625rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8125rem; }
+  line-height: 31px;
+  line-height: 1.61458rem;
+  margin-top: 77.5px;
+  margin-top: 4.03646rem;
+  margin-bottom: 15.5px;
+  margin-bottom: 0.80729rem; }
 
 h6 {
-  font-size: 16px;
+  font-size: 19.2px;
   font-size: 1rem;
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin-top: 65px;
-  margin-top: 4.0625rem;
-  margin-bottom: 13px;
-  margin-bottom: 0.8125rem; }
+  line-height: 31px;
+  line-height: 1.61458rem;
+  margin-top: 77.5px;
+  margin-top: 4.03646rem;
+  margin-bottom: 15.5px;
+  margin-bottom: 0.80729rem; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 105% em) {
   h1 {
-    font-size: 40px;
+    font-size: 48px;
     font-size: 2.5rem;
-    line-height: 62px;
-    line-height: 3.44444rem;
-    margin-top: 124px;
-    margin-top: 6.88889rem;
-    margin-bottom: 31px;
-    margin-bottom: 1.72222rem; }
+    line-height: 70px;
+    line-height: 3.36538rem;
+    margin-top: 140px;
+    margin-top: 6.73077rem;
+    margin-bottom: 35px;
+    margin-bottom: 1.68269rem; }
   h2 {
-    font-size: 27px;
+    font-size: 32.4px;
     font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.58333rem;
-    margin-top: 77.5px;
-    margin-top: 4.30556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.86111rem; }
+    line-height: 52.5px;
+    line-height: 2.52404rem;
+    margin-top: 87.5px;
+    margin-top: 4.20673rem;
+    margin-bottom: 17.5px;
+    margin-bottom: 0.84135rem; }
   h3 {
-    font-size: 22px;
+    font-size: 26.4px;
     font-size: 1.375rem;
-    line-height: 31px;
-    line-height: 1.72222rem;
-    margin-top: 62px;
-    margin-top: 3.44444rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.86111rem; }
+    line-height: 35px;
+    line-height: 1.68269rem;
+    margin-top: 70px;
+    margin-top: 3.36538rem;
+    margin-bottom: 17.5px;
+    margin-bottom: 0.84135rem; }
   h4 {
-    font-size: 19.2px;
+    font-size: 23.04px;
     font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.72222rem;
-    margin-top: 46.5px;
-    margin-top: 2.58333rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.86111rem; }
+    line-height: 35px;
+    line-height: 1.68269rem;
+    margin-top: 52.5px;
+    margin-top: 2.52404rem;
+    margin-bottom: 17.5px;
+    margin-bottom: 0.84135rem; }
   h5 {
-    font-size: 16px;
+    font-size: 19.2px;
     font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.72222rem;
-    margin-top: 77.5px;
-    margin-top: 4.30556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.86111rem; }
+    line-height: 35px;
+    line-height: 1.68269rem;
+    margin-top: 87.5px;
+    margin-top: 4.20673rem;
+    margin-bottom: 17.5px;
+    margin-bottom: 0.84135rem; }
   h6 {
-    font-size: 16px;
+    font-size: 19.2px;
     font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.72222rem;
-    margin-top: 77.5px;
-    margin-top: 4.30556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.86111rem; } }
+    line-height: 35px;
+    line-height: 1.68269rem;
+    margin-top: 87.5px;
+    margin-top: 4.20673rem;
+    margin-bottom: 17.5px;
+    margin-bottom: 0.84135rem; } }
 
 h1 + h2 {
-  margin-top: 26px;
-  margin-top: 1.625rem; }
-  @media screen and (min-width: 40em) {
+  margin-top: 31px;
+  margin-top: 1.61458rem; }
+  @media screen and (min-width: 105% em) {
     h1 + h2 {
-      margin-top: 31px;
-      margin-top: 1.72222rem; } }
+      margin-top: 35px;
+      margin-top: 1.68269rem; } }
 
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  margin-top: 13px;
-  margin-top: 0.8125rem; }
-  @media screen and (min-width: 40em) {
+  margin-top: 15.5px;
+  margin-top: 0.80729rem; }
+  @media screen and (min-width: 105% em) {
     h2 + h3,
     h3 + h4,
     h4 + h5 {
-      margin-top: 15.5px;
-      margin-top: 0.86111rem; } }
+      margin-top: 17.5px;
+      margin-top: 0.84135rem; } }
 
 h5 + h6 {
-  margin-top: -13px;
-  margin-top: -0.8125rem; }
-  @media screen and (min-width: 40em) {
+  margin-top: -15.5px;
+  margin-top: -0.80729rem; }
+  @media screen and (min-width: 105% em) {
     h5 + h6 {
-      margin-top: -15.5px;
-      margin-top: -0.86111rem; } }
+      margin-top: -17.5px;
+      margin-top: -0.84135rem; } }
 
 h6 {
   font-style: italic;
@@ -408,35 +408,35 @@ hgroup {
   display: block; }
 
 hr {
-  margin-top: 52px;
-  margin-top: 3.25rem;
-  margin-bottom: 52px;
-  margin-bottom: 3.25rem;
+  margin-top: 62px;
+  margin-top: 3.22917rem;
+  margin-bottom: 62px;
+  margin-bottom: 3.22917rem;
   box-sizing: content-box;
   border: 0;
   color: #222;
   display: block;
-  height: 26px;
-  height: 1.625rem;
+  height: 31px;
+  height: 1.61458rem;
   margin-right: auto;
   margin-left: auto;
-  background-size: 100% 26px;
-  background-size: 100% 1.625rem;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
+  background-size: 100% 31px;
+  background-size: 100% 1.61458rem;
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
   width: 100px; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     hr {
-      margin-top: 62px;
-      margin-top: 3.44444rem;
-      margin-bottom: 62px;
-      margin-bottom: 3.44444rem;
-      height: 31px;
-      height: 1.72222rem; } }
-  @media screen and (min-width: 40em) {
+      margin-top: 70px;
+      margin-top: 3.36538rem;
+      margin-bottom: 70px;
+      margin-bottom: 3.36538rem;
+      height: 35px;
+      height: 1.68269rem; } }
+  @media screen and (min-width: 105% em) {
     hr {
-      background-size: 100% 31px;
-      background-size: 100% 1.72222rem;
-      background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px); } }
+      background-size: 100% 35px;
+      background-size: 100% 1.68269rem;
+      background-image: linear-gradient(to bottom, transparent 1px, transparent 15.5px, #222 15.5px, #222 19.5px, transparent 19.5px, transparent 35px); } }
 
 img {
   border: 0;
@@ -461,7 +461,7 @@ progress {
 blockquote {
   font-style: italic;
   padding-left: 1.4375rem; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     blockquote {
       padding-left: 2rem; } }
 
@@ -470,24 +470,24 @@ cite {
   font-style: normal; }
 
 figure blockquote {
-  padding: 26px 0px;
-  padding: 1.625rem 0rem; }
-  @media screen and (min-width: 40em) {
+  padding: 31px 0px;
+  padding: 1.61458rem 0rem; }
+  @media screen and (min-width: 105% em) {
     figure blockquote {
-      padding: 62px 0px 31px;
-      padding: 3.44444rem 0rem 1.72222rem;
+      padding: 70px 0px 35px;
+      padding: 3.36538rem 0rem 1.68269rem;
       text-align: center; } }
   figure blockquote p {
-    font-size: 27px;
+    font-size: 32.4px;
     font-size: 1.6875rem;
-    line-height: 39px;
-    line-height: 2.4375rem; }
-    @media screen and (min-width: 40em) {
+    line-height: 46.5px;
+    line-height: 2.42188rem; }
+    @media screen and (min-width: 105% em) {
       figure blockquote p {
-        font-size: 27px;
+        font-size: 32.4px;
         font-size: 1.6875rem;
-        line-height: 46.5px;
-        line-height: 2.58333rem; } }
+        line-height: 52.5px;
+        line-height: 2.52404rem; } }
 
 table {
   border-collapse: collapse;
@@ -528,13 +528,13 @@ mark {
   color: #000; }
 
 small {
-  line-height: 13px;
-  line-height: 0.8125rem;
+  line-height: 15.5px;
+  line-height: 0.80729rem;
   font-size: 70%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 105% em) {
     small {
-      line-height: 15.5px;
-      line-height: 0.86111rem; } }
+      line-height: 17.5px;
+      line-height: 0.84135rem; } }
 
 sub,
 sup {
@@ -552,7 +552,7 @@ sub {
 /* Paragraph
 ========================================================================== */
 .attention-grabber {
-  font-size: 19.2px;
+  font-size: 23.04px;
   font-size: 1.2rem; }
 
 .alignLeft {
@@ -617,39 +617,46 @@ em {
 
 .mega-brand {
   position: relative;
+  margin: 0;
+  padding: 2em;
   width: 100%;
+  max-width: none;
   height: 560px;
   min-height: 10em;
-  padding: 2em;
   overflow: hidden; }
-  .mega-brand h1 {
-    white-space: nowrap; }
+  .mega-brand * {
+    margin: 0; }
   .mega-brand .mega-brand__container {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .mega-brand .mega-brand__header {
     text-align: center; }
     .mega-brand .mega-brand__header h1 {
+      margin: .5em 0 0;
       font-size: 2.5em;
       font-family: 'Pacifico';
-      margin-bottom: .5em; }
+      font-weight: 300;
+      white-space: nowrap; }
 
 #avatar {
   width: 7em;
   height: 7em;
-  margin-bottom: 1.5em;
+  margin: 0 auto;
   border-radius: 1em; }
 
 #tagline {
   display: inline-block;
+  padding: 0;
+  margin: .5em 0 0;
   font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: .5em; }
+  line-height: 1em; }
 
 #tagline-comments {
   display: none;
+  margin: .5em 0 0;
   font-family: monospace;
   font-size: 1.5em; }
 
@@ -669,7 +676,9 @@ em {
   animation: blink 1s linear 0s infinite; }
 
 ul.social {
-  list-style: none; }
+  list-style: none;
+  margin: .5em 0 0;
+  padding: 0; }
   ul.social li {
     display: inline-block;
     margin-right: 1.5em;
@@ -718,10 +727,11 @@ nav[role="navigation"] {
     margin-right: 2em; }
     nav[role="navigation"] .nav__list a.nav__list__item {
       position: relative;
-      font-family: "Lato";
       display: inline-block;
       line-height: 1.25em;
       padding: 1.25em 1em;
+      font-family: "Lato";
+      text-decoration: none;
       color: #d6d6d6;
       transition: color 0.125s; }
       nav[role="navigation"] .nav__list a.nav__list__item:hover {
@@ -780,14 +790,14 @@ nav[role="navigation"] {
   .project-card p {
     margin: 0.75em 0 0 0; }
   .project-card .project-card__tags {
-    margin-top: 0.75em; }
+    margin: 0.75em 0 0; }
     .project-card .project-card__tags .tag {
       font-size: .8em; }
   .project-card .project-card__links {
-    margin-top: 1em; }
+    margin: 1em 0 0; }
     .project-card .project-card__links a {
       display: inline-block;
-      margin-right: 1em; }
+      margin: 0 1em 0 0; }
       .project-card .project-card__links a:last-of-type {
         margin-right: 0; }
 

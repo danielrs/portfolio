@@ -10,13 +10,6 @@ $color-link: #4078c0;
 $color-link-hover: $color-link;
 $color-link-visited: lighten($color-link, 10%);
 
-// Fonts
-$fonts: (
-    serif: 'MerryWeather',
-    sans-serif: 'Lato',
-    monospace: 'Inconsolata'
-) !default;
-
 // Animations
 
 $animation-very-slow: 1s;
@@ -39,3 +32,18 @@ $breakpoints: (
 
 $magic-number: 1.5em;
 $golden-ratio: 1.61803398875;
+
+// Fonts
+
+$fonts: (
+    serif: 'MerryWeather',
+    sans-serif: 'Lato',
+    monospace: 'Inconsolata'
+) !default;
+
+// Gutenberg overrides
+
+$base-font-size: 120;
+$base-font-size-desktop: 130;
+$edit-mode: false;
+$max-width: 100%;

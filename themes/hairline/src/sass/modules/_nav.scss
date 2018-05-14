@@ -38,10 +38,12 @@ nav[role="navigation"] {
 
         a.nav__list__item {
             position: relative;
-            font-family: map-get($fonts, sans-serif);
             display: inline-block;
             line-height: $nav-height / 2;
             padding: ($nav-height / 2) 1em;
+
+            font-family: map-get($fonts, sans-serif);
+            text-decoration: none;
 
             color: $color-dark-gray;
             transition: color $animation-fast;
