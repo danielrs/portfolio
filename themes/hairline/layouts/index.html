@@ -46,7 +46,7 @@
         <h3>Preferred projects</h3>
         <div class="project-list">
         {{range first 4 (where .Data.Pages "Section" "projects")}}
-                {{partial "projects/card" .}}
+            {{partial "projects/card" .}}
         {{end}}
          </div>
 

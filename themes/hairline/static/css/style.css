@@ -800,8 +800,8 @@ em {
     color: #444444; }
 
 .container {
-  max-width: 1024;
-  margin: 0 auto;
+  max-width: 1024px;
+  margin: 3em auto 0;
   padding: 0 1.5em; }
 
 .tag {
@@ -889,6 +889,9 @@ ul.social {
 html, body {
   margin: 0;
   padding: 0; }
+
+.home .container {
+  margin-top: 0; }
 
 nav[role="navigation"] {
   border-bottom: 1px solid #ebebeb; }
@@ -986,10 +989,6 @@ nav[role="navigation"] {
       margin-right: 1em; }
       .project-card .project-card__links a:last-of-type {
         margin-right: 0; }
-
-.main {
-  max-width: 960px;
-  margin: 0 auto; }
 
 
 /*# sourceMappingURL=style.css.map*/
