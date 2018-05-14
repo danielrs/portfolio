@@ -52,4 +52,44 @@
 }
 
 .project-post {
+    @include clearfix;
+
+    header {
+        h1 {
+            font-family: map-get($fonts, sans-serif);
+            margin-bottom: 0;
+        }
+
+        time {
+            display: block;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .tag-list {
+            margin-top: .5em;
+        }
+
+        .separator {
+            display: block;
+            margin: $magic-number;
+            text-align: center;
+        }
+    }
+
+    @include breakpoint('break-4') {
+        header {
+            h1 {
+                margin-top: 0;
+            }
+        }
+
+        aside {
+            @include column(1/4);
+        }
+
+        main {
+            @include column(3/4);
+        }
+    }
 }

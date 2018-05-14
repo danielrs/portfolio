@@ -1,16 +1,21 @@
 {{define "main"}}
-    <main class="container">
+    <main class="container container--large">
         <article class="project-post">
             {{$datetime := .Date.Format "2006-01-02"}}
-            <header>
-                <h1>{{.Title}}</h1>
-                <time datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
-                {{with .Params.Tags}}
-                    {{range .}}
-                        <span class="tag">{{.}}</span>
-                    {{end}}
-                {{end}}
-            </header>
+            <aside>
+                <header>
+                    <h1>{{.Title}}</h1>
+                    <time datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
+                    <ul class="tag-list">
+                        {{with .Params.Tags}}
+                            {{range .}}
+                                <li class="tag">{{.}}</li>
+                            {{end}}
+                        {{end}}
+                    </ul>
+                    <span class="separator">&#8729;</span>
+                </header>
+            </aside>
             <main>
                 {{.Content}}
             </main>
