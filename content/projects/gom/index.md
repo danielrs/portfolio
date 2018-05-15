@@ -16,4 +16,4 @@ The previous sequence diagram shows the synchronous collaboration between back-e
 
 {{< img src="sequence2.svg" title="sequence 2" img-class="img--75" >}}
 
-this setup allows for faster prototyping and develpment of both parties.
+this setup allows for faster prototyping and development of both parties.
