@@ -10,9 +10,13 @@
     {{end}}
 
     <div class="project-card__links">
-        <a href="{{.URL}}" title="Project details">See details</a>
+        <a href="{{.URL}}" title="Project details">
+            See details
+        </a>
         {{with .Params.ProjectUrl}}
-            <a href="{{.}}" title="Project homepage">Homepage</a>
+            <a href="{{.}}" title="Project homepage">
+                Homepage
+            </a>
         {{end}}
     </div>
 </section>

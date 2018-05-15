@@ -4,13 +4,13 @@
         <div class="mega-brand__container">
             <div class="mega-brand__header">
                 {{with .Resources.GetMatch "avatar*"}}
-                    <img id="avatar" src="{{.Permalink}}" alt="{{.Name}}" width=100% height=100%/>
+                    <img id="avatar" class="animated fadeInDown" src="{{.Permalink}}" alt="{{.Name}}" width=100% height=100%/>
                 {{end}}
 
-                <h1>{{.Site.Title}}</h1>
+                <h1 class="animated fadeInDown">{{.Site.Title}}</h1>
                 {{with .Site.Params.Tagline }}
 
-                    <code id="tagline">{{.title}}</code>
+                    <code id="tagline" class="animated fadeInDown">{{.title}}</code>
                     {{with .comments}}
                         <ul id="tagline-comments">
                             {{range .}}<li>{{.}}</li>{{end}}

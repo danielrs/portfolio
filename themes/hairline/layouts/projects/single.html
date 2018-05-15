@@ -2,9 +2,9 @@
     <main class="container container--large">
         <article class="project-post">
             {{$datetime := .Date.Format "2006-01-02"}}
+            <h1>{{.Title}}</h1>
             <aside>
                 <header>
-                    <h1>{{.Title}}</h1>
                     <time datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
                     <ul class="tag-list">
                         {{with .Params.Tags}}
@@ -13,6 +13,11 @@
                             {{end}}
                         {{end}}
                     </ul>
+                    {{with .Params.ProjectUrl}}
+                        <a href="{{.}}" title="Project homepage">
+                            <i class="fas fa-code"></i> Homepage
+                       </a>
+                    {{end}}
                     <span class="separator">&#8729;</span>
                 </header>
             </aside>

@@ -33,32 +33,32 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
   background-position: left top;
   background-repeat: repeat;
-  background-size: 100% 31px;
-  background-size: 100% 1.61458rem; }
+  background-size: 100% 30px;
+  background-size: 100% 1.63043rem; }
   @media screen and (min-width: 105% em) {
     .grid, .grid-double {
-      background-size: 100% 35px;
-      background-size: 100% 1.68269rem; } }
+      background-size: 100% 34px;
+      background-size: 100% 1.7rem; } }
 
 .grid-double {
-  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px); }
+  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15px, rgba(0, 170, 255, 0.2) 15px, transparent 16px, transparent 30px); }
   @media screen and (min-width: 105% em) {
     .grid-double {
-      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 17.5px, rgba(0, 170, 255, 0.2) 17.5px, transparent 18.5px, transparent 35px); } }
+      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 17px, rgba(0, 170, 255, 0.2) 17px, transparent 18px, transparent 34px); } }
 
 .toggleWrapper {
   display: none;
   position: fixed;
-  top: 31px;
-  right: 31px;
+  top: 30px;
+  right: 30px;
   background-color: #231F20;
   border-radius: 25px;
   padding: 0 10px 0 20px;
   height: 32px; }
   @media screen and (min-width: 105% em) {
     .toggleWrapper {
-      right: 35px;
-      top: 35px; } }
+      right: 34px;
+      top: 34px; } }
 
 .btnToggleGrid {
   background: url("../../assets/images/grid-icons.png") top right no-repeat;
@@ -75,8 +75,8 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   color: #fff; }
   @media screen and (min-width: 105% em) {
     .btnToggleGrid {
-      top: 35px;
-      right: 35px; } }
+      top: 34px;
+      right: 34px; } }
   .btnToggleGrid:hover {
     color: #fff; }
   .btnToggleGrid:active {
@@ -102,29 +102,29 @@ aside {
 
 html {
   box-sizing: border-box;
-  font-size: 19.2px;
-  font-size: 120%;
+  font-size: 18.4px;
+  font-size: 115%;
   font-family: Merriweather, Georgia, serif;
   color: #222;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
   @media screen and (min-width: 105% em) {
     html {
-      font-size: 20.8px;
-      font-size: 1.3rem; } }
+      font-size: 20px;
+      font-size: 1.25rem; } }
 
 * {
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin: 0px 0px 31px;
-  margin: 0rem 0rem 1.61458rem; }
+  line-height: 30px;
+  line-height: 1.63043rem;
+  margin: 0px 0px 30px;
+  margin: 0rem 0rem 1.63043rem; }
   @media screen and (min-width: 105% em) {
     * {
-      line-height: 35px;
-      line-height: 1.68269rem;
-      margin-bottom: 35px;
-      margin-bottom: 1.68269rem;
-      max-width: 2080%px;
+      line-height: 34px;
+      line-height: 1.7rem;
+      margin-bottom: 34px;
+      margin-bottom: 1.7rem;
+      max-width: 2000%px;
       max-width: 100%rem;
       margin-left: auto;
       margin-right: auto; } }
@@ -175,7 +175,7 @@ article {
   width: 80%; }
   @media screen and (min-width: 105% em) {
     article {
-      max-width: 3120%px;
+      max-width: 3000%px;
       max-width: 150%rem; } }
 
 audio {
@@ -199,13 +199,13 @@ samp {
   font-family: monospace, monospace; }
 
 code {
-  padding: 31px;
-  padding: 1.61458rem;
+  padding: 30px;
+  padding: 1.63043rem;
   display: block; }
   @media screen and (min-width: 105% em) {
     code {
-      padding: 35px;
-      padding: 1.68269rem; } }
+      padding: 34px;
+      padding: 1.7rem; } }
 
 details {
   display: block; }
@@ -214,8 +214,8 @@ summary {
   display: block; }
 
 figcaption {
-  line-height: 31px;
-  line-height: 1.61458rem;
+  line-height: 30px;
+  line-height: 1.63043rem;
   color: #222;
   display: block;
   font-size: .8125rem;
@@ -224,8 +224,8 @@ figcaption {
   text-align: center; }
   @media screen and (min-width: 105% em) {
     figcaption {
-      line-height: 35px;
-      line-height: 1.68269rem;
+      line-height: 34px;
+      line-height: 1.7rem;
       margin-bottom: 0; } }
 
 figure {
@@ -234,10 +234,10 @@ figure {
 @media screen and (min-width: 105% em) {
   figure.floatLeft,
   figure.floatRight {
-    max-width: 1040%px;
+    max-width: 1000%px;
     max-width: 50%rem;
-    padding: 0px 35px;
-    padding: 0rem 1.68269rem; } }
+    padding: 0px 34px;
+    padding: 0rem 1.7rem; } }
 
 @media screen and (min-width: 105% em) {
   figure.floatLeft blockquote,
@@ -249,156 +249,156 @@ figure {
 @media screen and (min-width: 105% em) {
   figure.floatLeft blockquote p,
   figure.floatRight blockquote p {
-    font-size: 23.04px;
+    font-size: 22.08px;
     font-size: 1.2rem;
-    line-height: 35px;
-    line-height: 1.68269rem; } }
+    line-height: 34px;
+    line-height: 1.7rem; } }
 
 /* Headings
    ========================================================================== */
 h1 {
-  font-size: 48px;
+  font-size: 46px;
   font-size: 2.5rem;
-  line-height: 62px;
-  line-height: 3.22917rem;
-  margin-top: 124px;
-  margin-top: 6.45833rem;
-  margin-bottom: 31px;
-  margin-bottom: 1.61458rem; }
+  line-height: 60px;
+  line-height: 3.26087rem;
+  margin-top: 120px;
+  margin-top: 6.52174rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.63043rem; }
 
 h2 {
-  font-size: 32.4px;
+  font-size: 31.05px;
   font-size: 1.6875rem;
-  line-height: 46.5px;
-  line-height: 2.42188rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 45px;
+  line-height: 2.44565rem;
+  margin-top: 75px;
+  margin-top: 4.07609rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.81522rem; }
 
 h3 {
-  font-size: 26.4px;
+  font-size: 25.3px;
   font-size: 1.375rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 62px;
-  margin-top: 3.22917rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 30px;
+  line-height: 1.63043rem;
+  margin-top: 60px;
+  margin-top: 3.26087rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.81522rem; }
 
 h4 {
-  font-size: 23.04px;
+  font-size: 22.08px;
   font-size: 1.2rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 46.5px;
-  margin-top: 2.42188rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 30px;
+  line-height: 1.63043rem;
+  margin-top: 45px;
+  margin-top: 2.44565rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.81522rem; }
 
 h5 {
-  font-size: 19.2px;
+  font-size: 18.4px;
   font-size: 1rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 30px;
+  line-height: 1.63043rem;
+  margin-top: 75px;
+  margin-top: 4.07609rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.81522rem; }
 
 h6 {
-  font-size: 19.2px;
+  font-size: 18.4px;
   font-size: 1rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 30px;
+  line-height: 1.63043rem;
+  margin-top: 75px;
+  margin-top: 4.07609rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.81522rem; }
 
 @media screen and (min-width: 105% em) {
   h1 {
-    font-size: 48px;
+    font-size: 46px;
     font-size: 2.5rem;
-    line-height: 70px;
-    line-height: 3.36538rem;
-    margin-top: 140px;
-    margin-top: 6.73077rem;
-    margin-bottom: 35px;
-    margin-bottom: 1.68269rem; }
+    line-height: 68px;
+    line-height: 3.4rem;
+    margin-top: 136px;
+    margin-top: 6.8rem;
+    margin-bottom: 34px;
+    margin-bottom: 1.7rem; }
   h2 {
-    font-size: 32.4px;
+    font-size: 31.05px;
     font-size: 1.6875rem;
-    line-height: 52.5px;
-    line-height: 2.52404rem;
-    margin-top: 87.5px;
-    margin-top: 4.20673rem;
-    margin-bottom: 17.5px;
-    margin-bottom: 0.84135rem; }
+    line-height: 51px;
+    line-height: 2.55rem;
+    margin-top: 85px;
+    margin-top: 4.25rem;
+    margin-bottom: 17px;
+    margin-bottom: 0.85rem; }
   h3 {
-    font-size: 26.4px;
+    font-size: 25.3px;
     font-size: 1.375rem;
-    line-height: 35px;
-    line-height: 1.68269rem;
-    margin-top: 70px;
-    margin-top: 3.36538rem;
-    margin-bottom: 17.5px;
-    margin-bottom: 0.84135rem; }
+    line-height: 34px;
+    line-height: 1.7rem;
+    margin-top: 68px;
+    margin-top: 3.4rem;
+    margin-bottom: 17px;
+    margin-bottom: 0.85rem; }
   h4 {
-    font-size: 23.04px;
+    font-size: 22.08px;
     font-size: 1.2rem;
-    line-height: 35px;
-    line-height: 1.68269rem;
-    margin-top: 52.5px;
-    margin-top: 2.52404rem;
-    margin-bottom: 17.5px;
-    margin-bottom: 0.84135rem; }
+    line-height: 34px;
+    line-height: 1.7rem;
+    margin-top: 51px;
+    margin-top: 2.55rem;
+    margin-bottom: 17px;
+    margin-bottom: 0.85rem; }
   h5 {
-    font-size: 19.2px;
+    font-size: 18.4px;
     font-size: 1rem;
-    line-height: 35px;
-    line-height: 1.68269rem;
-    margin-top: 87.5px;
-    margin-top: 4.20673rem;
-    margin-bottom: 17.5px;
-    margin-bottom: 0.84135rem; }
+    line-height: 34px;
+    line-height: 1.7rem;
+    margin-top: 85px;
+    margin-top: 4.25rem;
+    margin-bottom: 17px;
+    margin-bottom: 0.85rem; }
   h6 {
-    font-size: 19.2px;
+    font-size: 18.4px;
     font-size: 1rem;
-    line-height: 35px;
-    line-height: 1.68269rem;
-    margin-top: 87.5px;
-    margin-top: 4.20673rem;
-    margin-bottom: 17.5px;
-    margin-bottom: 0.84135rem; } }
+    line-height: 34px;
+    line-height: 1.7rem;
+    margin-top: 85px;
+    margin-top: 4.25rem;
+    margin-bottom: 17px;
+    margin-bottom: 0.85rem; } }
 
 h1 + h2 {
-  margin-top: 31px;
-  margin-top: 1.61458rem; }
+  margin-top: 30px;
+  margin-top: 1.63043rem; }
   @media screen and (min-width: 105% em) {
     h1 + h2 {
-      margin-top: 35px;
-      margin-top: 1.68269rem; } }
+      margin-top: 34px;
+      margin-top: 1.7rem; } }
 
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  margin-top: 15.5px;
-  margin-top: 0.80729rem; }
+  margin-top: 15px;
+  margin-top: 0.81522rem; }
   @media screen and (min-width: 105% em) {
     h2 + h3,
     h3 + h4,
     h4 + h5 {
-      margin-top: 17.5px;
-      margin-top: 0.84135rem; } }
+      margin-top: 17px;
+      margin-top: 0.85rem; } }
 
 h5 + h6 {
-  margin-top: -15.5px;
-  margin-top: -0.80729rem; }
+  margin-top: -15px;
+  margin-top: -0.81522rem; }
   @media screen and (min-width: 105% em) {
     h5 + h6 {
-      margin-top: -17.5px;
-      margin-top: -0.84135rem; } }
+      margin-top: -17px;
+      margin-top: -0.85rem; } }
 
 h6 {
   font-style: italic;
@@ -408,35 +408,35 @@ hgroup {
   display: block; }
 
 hr {
-  margin-top: 62px;
-  margin-top: 3.22917rem;
-  margin-bottom: 62px;
-  margin-bottom: 3.22917rem;
+  margin-top: 60px;
+  margin-top: 3.26087rem;
+  margin-bottom: 60px;
+  margin-bottom: 3.26087rem;
   box-sizing: content-box;
   border: 0;
   color: #222;
   display: block;
-  height: 31px;
-  height: 1.61458rem;
+  height: 30px;
+  height: 1.63043rem;
   margin-right: auto;
   margin-left: auto;
-  background-size: 100% 31px;
-  background-size: 100% 1.61458rem;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
+  background-size: 100% 30px;
+  background-size: 100% 1.63043rem;
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 13px, #222 13px, #222 17px, transparent 17px, transparent 30px);
   width: 100px; }
   @media screen and (min-width: 105% em) {
     hr {
-      margin-top: 70px;
-      margin-top: 3.36538rem;
-      margin-bottom: 70px;
-      margin-bottom: 3.36538rem;
-      height: 35px;
-      height: 1.68269rem; } }
+      margin-top: 68px;
+      margin-top: 3.4rem;
+      margin-bottom: 68px;
+      margin-bottom: 3.4rem;
+      height: 34px;
+      height: 1.7rem; } }
   @media screen and (min-width: 105% em) {
     hr {
-      background-size: 100% 35px;
-      background-size: 100% 1.68269rem;
-      background-image: linear-gradient(to bottom, transparent 1px, transparent 15.5px, #222 15.5px, #222 19.5px, transparent 19.5px, transparent 35px); } }
+      background-size: 100% 34px;
+      background-size: 100% 1.7rem;
+      background-image: linear-gradient(to bottom, transparent 1px, transparent 15px, #222 15px, #222 19px, transparent 19px, transparent 34px); } }
 
 img {
   border: 0;
@@ -470,24 +470,24 @@ cite {
   font-style: normal; }
 
 figure blockquote {
-  padding: 31px 0px;
-  padding: 1.61458rem 0rem; }
+  padding: 30px 0px;
+  padding: 1.63043rem 0rem; }
   @media screen and (min-width: 105% em) {
     figure blockquote {
-      padding: 70px 0px 35px;
-      padding: 3.36538rem 0rem 1.68269rem;
+      padding: 68px 0px 34px;
+      padding: 3.4rem 0rem 1.7rem;
       text-align: center; } }
   figure blockquote p {
-    font-size: 32.4px;
+    font-size: 31.05px;
     font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.42188rem; }
+    line-height: 45px;
+    line-height: 2.44565rem; }
     @media screen and (min-width: 105% em) {
       figure blockquote p {
-        font-size: 32.4px;
+        font-size: 31.05px;
         font-size: 1.6875rem;
-        line-height: 52.5px;
-        line-height: 2.52404rem; } }
+        line-height: 51px;
+        line-height: 2.55rem; } }
 
 table {
   border-collapse: collapse;
@@ -528,13 +528,13 @@ mark {
   color: #000; }
 
 small {
-  line-height: 15.5px;
-  line-height: 0.80729rem;
+  line-height: 15px;
+  line-height: 0.81522rem;
   font-size: 70%; }
   @media screen and (min-width: 105% em) {
     small {
-      line-height: 17.5px;
-      line-height: 0.84135rem; } }
+      line-height: 17px;
+      line-height: 0.85rem; } }
 
 sub,
 sup {
@@ -552,7 +552,7 @@ sub {
 /* Paragraph
 ========================================================================== */
 .attention-grabber {
-  font-size: 23.04px;
+  font-size: 22.08px;
   font-size: 1.2rem; }
 
 .alignLeft {
@@ -620,6 +620,51 @@ em {
   background: #d9e4f3; }
   .tag:last-of-type {
     margin-right: 0; }
+
+figure {
+  font-size: .5em; }
+  figure img {
+    margin: 0 auto; }
+    figure img.img--5 {
+      width: 5%; }
+    figure img.img--10 {
+      width: 10%; }
+    figure img.img--15 {
+      width: 15%; }
+    figure img.img--20 {
+      width: 20%; }
+    figure img.img--25 {
+      width: 25%; }
+    figure img.img--30 {
+      width: 30%; }
+    figure img.img--35 {
+      width: 35%; }
+    figure img.img--40 {
+      width: 40%; }
+    figure img.img--45 {
+      width: 45%; }
+    figure img.img--50 {
+      width: 50%; }
+    figure img.img--55 {
+      width: 55%; }
+    figure img.img--60 {
+      width: 60%; }
+    figure img.img--65 {
+      width: 65%; }
+    figure img.img--70 {
+      width: 70%; }
+    figure img.img--75 {
+      width: 75%; }
+    figure img.img--80 {
+      width: 80%; }
+    figure img.img--85 {
+      width: 85%; }
+    figure img.img--90 {
+      width: 90%; }
+    figure img.img--95 {
+      width: 95%; }
+    figure img.img--100 {
+      width: 100%; }
 
 .mega-brand {
   position: relative;
@@ -812,7 +857,7 @@ nav[role="navigation"] {
   display: table;
   clear: both; }
 
-.project-post header h1 {
+.project-post h1 {
   font-family: "Lato";
   margin-bottom: 0; }
 
@@ -824,14 +869,15 @@ nav[role="navigation"] {
 .project-post header .tag-list {
   margin-top: .5em; }
 
+.project-post header i {
+  margin-bottom: 0; }
+
 .project-post header .separator {
   display: block;
   margin: 1.5em;
   text-align: center; }
 
-@media screen and (min-width: 80em) {
-  .project-post header h1 {
-    margin-top: 0; }
+@media screen and (min-width: 64em) {
   .project-post aside {
     float: left;
     clear: none;

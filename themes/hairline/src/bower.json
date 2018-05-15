@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "typing.js": "^0.4.4"
+    "typing.js": "^0.4.4",
+    "animate.css": "^3.5.2"
   }
 }

@@ -22,3 +22,17 @@
         margin-right: 0;
     }
 }
+
+figure {
+    font-size: .5em;
+
+    img {
+        margin: 0 auto;
+
+        @for $percent from 1 through 20 {
+            &.img--#{$percent*5} {
+                width: #{$percent*5}#{'%'};
+            }
+        }
+    }
+}
