@@ -81,5 +81,9 @@ ul.social {
         display: inline-block;
         margin-right: $magic-number;
         white-space: nowrap;
+
+        a, a:visited {
+          color: $color-font-body;
+        }
     }
 }

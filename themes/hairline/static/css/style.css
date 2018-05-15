@@ -105,7 +105,7 @@ html {
   font-size: 18.4px;
   font-size: 115%;
   font-family: Merriweather, Georgia, serif;
-  color: #222;
+  color: #444;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
   @media screen and (min-width: 105% em) {
@@ -156,16 +156,16 @@ section {
    ========================================================================== */
 a {
   background: transparent;
-  color: #222;
+  color: #444;
   transition: all .3s; }
   a:active, a:hover {
     outline: 0; }
   a:hover {
-    color: #222; }
+    color: #444; }
   a:visited {
     color: #888; }
     a:visited:hover {
-      color: #222; }
+      color: #444; }
   a:active {
     color: #f00; }
 
@@ -216,7 +216,7 @@ summary {
 figcaption {
   line-height: 30px;
   line-height: 1.63043rem;
-  color: #222;
+  color: #444;
   display: block;
   font-size: .8125rem;
   font-style: italic;
@@ -414,7 +414,7 @@ hr {
   margin-bottom: 3.26087rem;
   box-sizing: content-box;
   border: 0;
-  color: #222;
+  color: #444;
   display: block;
   height: 30px;
   height: 1.63043rem;
@@ -422,7 +422,7 @@ hr {
   margin-left: auto;
   background-size: 100% 30px;
   background-size: 100% 1.63043rem;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 13px, #222 13px, #222 17px, transparent 17px, transparent 30px);
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 13px, #444 13px, #444 17px, transparent 17px, transparent 30px);
   width: 100px; }
   @media screen and (min-width: 105% em) {
     hr {
@@ -436,7 +436,7 @@ hr {
     hr {
       background-size: 100% 34px;
       background-size: 100% 1.7rem;
-      background-image: linear-gradient(to bottom, transparent 1px, transparent 15px, #222 15px, #222 19px, transparent 19px, transparent 34px); } }
+      background-image: linear-gradient(to bottom, transparent 1px, transparent 15px, #444 15px, #444 19px, transparent 19px, transparent 34px); } }
 
 img {
   border: 0;
@@ -577,9 +577,6 @@ video {
  - table + side comments elements,
  - translate to Less and Stylus.
  */
-body, html {
-  color: #444; }
-
 strong {
   font-weight: 700; }
 
@@ -734,6 +731,8 @@ ul.social {
     display: inline-block;
     margin-right: 1.5em;
     white-space: nowrap; }
+    ul.social li a, ul.social li a:visited {
+      color: #444; }
 
 #footer {
   margin-top: 3em;

@@ -54,7 +54,7 @@ nav[role="navigation"] {
         }
 
         a.nav__list__active, a.nav__list__active:hover {
-            color: $color-body;
+            color: $color-font-body;
         }
 
         a.nav__list__active:after {
@@ -67,7 +67,7 @@ nav[role="navigation"] {
             top: 100%;
             left: 50%;
 
-            background: $color-body;
+            background: $color-font-body;
             transform: translateX(-50%);
         }
     }
