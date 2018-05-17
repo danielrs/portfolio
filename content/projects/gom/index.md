@@ -14,7 +14,7 @@ When working in a new project, back-end and front-end developers often go hand i
 
 For bigger applications, the usual worflow is to make sure to design a good API specification that both the back-end and front-end developers need to follow. However, the real-time interaction with the API is affected, as any changes may take longer to be committed.
 
-**Go** **M**ocking is a tool for API mocking and dummy data server that uses RAML (Rest API Modelling Language) for setup. The idea is to **de-couple** back-end and front-end development by allowing back-end developers to define and API that front-end developers can use while the real, full-featured API is being created. The following diagram the process when *gom* is involved:
+**Go** **M**ocking is a tool for API mocking and dummy data server that uses RAML (Rest API Modelling Language) for setup. The idea is to **de-couple** back-end and front-end development by allowing back-end developers to define and API that front-end developers can use while the real, full-featured API is being created. The following diagram shows the process when *gom* is involved:
 
 {{< img src="sequence2.svg" title="sequence 2" img-class="img--75" >}}
 
