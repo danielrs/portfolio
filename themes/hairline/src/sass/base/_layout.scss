@@ -3,6 +3,10 @@
     margin: $magic-number*2 auto 0;
     padding: 0 $magic-number;
 
+    &.container--main {
+        @include margin-top(4);
+    }
+
     &.container--large {
         max-width: map-get($breakpoints, break-4) * 1px;
     }

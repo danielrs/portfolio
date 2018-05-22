@@ -55,7 +55,7 @@
     @include clearfix;
 
     h1 {
-        font-family: map-get($fonts, sans-serif);
+        font-family: map-get($fonts, serif);
         margin-bottom: 0;
     }
 

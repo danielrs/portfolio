@@ -596,6 +596,9 @@ em {
   max-width: 1024px;
   margin: 3em auto 0;
   padding: 0 1.5em; }
+  .container.container--main {
+    margin-top: 120px;
+    margin-top: 6.52174rem; }
   .container.container--large {
     max-width: 1280px; }
 
@@ -857,7 +860,7 @@ nav[role="navigation"] {
   clear: both; }
 
 .project-post h1 {
-  font-family: "Lato";
+  font-family: "Merriweather";
   margin-bottom: 0; }
 
 .project-post header time {
