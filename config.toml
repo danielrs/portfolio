@@ -27,7 +27,7 @@ title = "LinkedIn"
 icon = "fab fa-linkedin"
 
 [[params.social]]
-url = "/resume.pdf"
+url = "/daniel-rivas.pdf"
 title = "Résumé"
 icon = "fas fa-file-alt"
 blank = true
