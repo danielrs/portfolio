@@ -676,6 +676,7 @@ figure {
 
 .date {
   font-family: "Lato";
+  font-style: italic;
   color: #888; }
 
 div.highlight, div.highlight pre {
