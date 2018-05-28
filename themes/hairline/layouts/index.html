@@ -45,10 +45,20 @@
 
         <h3>Preferred projects</h3>
         <div class="project-list">
-        {{range first 4 (where .Data.Pages "Section" "projects")}}
-            {{partial "projects/card" .}}
-        {{end}}
+            {{range first 4 (where .Data.Pages "Section" "projects")}}
+                {{partial "projects/card" .}}
+            {{end}}
          </div>
+    </main>
+
+    <main class="main container container--small typeset">
+         <h3>Latests posts</h3>
+         <div class="post-list">
+             {{range first 4 (where .Data.Pages "Section" "blog")}}
+                {{partial "blog/item" .}}
+             {{end}}
+         </div>
+    </main>
 
         <!-- <h3>Latest posts</h3> -->
         <!-- {{range first 4 (where .Data.Pages.ByDate "Section" "blog")}} -->

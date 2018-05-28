@@ -73,12 +73,6 @@
         i {
             margin-bottom: 0;
         }
-
-        .separator {
-            display: block;
-            margin: $magic-number;
-            text-align: center;
-        }
     }
 
     @include breakpoint('break-3') {

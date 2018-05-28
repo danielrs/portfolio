@@ -599,6 +599,8 @@ em {
   .container.container--main {
     margin-top: 120px;
     margin-top: 6.52174rem; }
+  .container.container--small {
+    max-width: 800px; }
   .container.container--large {
     max-width: 1280px; }
 
@@ -666,6 +668,19 @@ figure {
     figure img.img--100 {
       width: 100%; }
 
+.separator {
+  margin-top: 30px;
+  margin-top: 1.63043rem;
+  display: block;
+  text-align: center; }
+
+.date {
+  font-family: "Lato";
+  color: #888; }
+
+div.highlight, div.highlight pre {
+  border-radius: 4px; }
+
 .mega-brand {
   position: relative;
   margin: 0;
@@ -708,7 +723,7 @@ figure {
 #tagline-comments {
   display: none;
   margin: .5em 0 0;
-  font-family: monospace;
+  font-family: "Inconsolata";
   font-size: 1.5em; }
 
 @keyframes blink {
@@ -874,11 +889,6 @@ nav[role="navigation"] {
 .project-post header i {
   margin-bottom: 0; }
 
-.project-post header .separator {
-  display: block;
-  margin: 1.5em;
-  text-align: center; }
-
 @media screen and (min-width: 64em) {
   .project-post aside {
     float: left;
@@ -906,6 +916,50 @@ nav[role="navigation"] {
       clear: both; }
     .project-post main:last-child {
       margin-right: 0%; } }
+
+.blog-item {
+  margin-bottom: 60px;
+  margin-bottom: 3.26087rem; }
+  .blog-item em {
+    font-family: "Lato";
+    color: #888; }
+  .blog-item h1, .blog-item h2, .blog-item h3, .blog-item h4 {
+    font-size: 27.6px;
+    font-size: 1.5rem;
+    line-height: 37.5px;
+    line-height: 2.03804rem;
+    margin-bottom: 7.5px;
+    margin-bottom: 0.40761rem;
+    margin-top: 0; }
+    .blog-item h1 a, .blog-item h2 a, .blog-item h3 a, .blog-item h4 a {
+      text-decoration: none; }
+      .blog-item h1 a:visited, .blog-item h1 a:hover, .blog-item h1 a:active, .blog-item h2 a:visited, .blog-item h2 a:hover, .blog-item h2 a:active, .blog-item h3 a:visited, .blog-item h3 a:hover, .blog-item h3 a:active, .blog-item h4 a:visited, .blog-item h4 a:hover, .blog-item h4 a:active {
+        color: #444; }
+  .blog-item .summary {
+    margin-bottom: 0; }
+    .blog-item .summary *:last-child {
+      margin-bottom: 0; }
+
+.blog-post {
+  width: auto; }
+  .blog-post header {
+    text-align: center; }
+    .blog-post header h1 {
+      margin-bottom: 0; }
+      @media (max-width: 50em) {
+        .blog-post header h1 {
+          font-size: 27.6px;
+          font-size: 1.5rem;
+          line-height: 37.5px;
+          line-height: 2.03804rem; } }
+    .blog-post header .tag-list {
+      margin-top: 15px;
+      margin-top: 0.81522rem; }
+    .blog-post header .separator {
+      margin-top: 30px;
+      margin-top: 1.63043rem;
+      display: block;
+      text-align: center; }
 
 
 /*# sourceMappingURL=style.css.map*/

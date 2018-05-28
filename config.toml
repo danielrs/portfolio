@@ -5,6 +5,7 @@ copyright = "Daniel Rivas"
 
 sectionPagesMenu = "main"
 metaDataFormat = "toml"
+pygmentsStyle = "dracula"
 
 theme = "hairline"
 

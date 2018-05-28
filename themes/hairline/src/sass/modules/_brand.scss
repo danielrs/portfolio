@@ -56,7 +56,7 @@
 #tagline-comments {
     display: none;
     margin: .5em 0 0;
-    font-family: monospace;
+    font-family: map-get($fonts, monospace);
     font-size: 1.5em;
 }
 

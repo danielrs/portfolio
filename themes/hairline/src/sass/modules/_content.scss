@@ -36,3 +36,18 @@ figure {
         }
     }
 }
+
+.separator {
+    @include margin-top(1);
+    display: block;
+    text-align: center;
+}
+
+.date {
+    font-family: map-get($fonts, sans-serif);
+    color: $color-font-light;
+}
+
+div.highlight, div.highlight pre {
+    border-radius: 4px;
+}
