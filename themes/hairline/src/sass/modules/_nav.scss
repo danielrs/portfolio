@@ -104,7 +104,7 @@ nav[role="navigation"] {
     // Breakpoint at most
     // ----------------
 
-    @include breakpoint($max: map-get($breakpoints, break-4) - 1) {
+    @include breakpoint($max: map-get($breakpoints, break-2) - 1) {
         .nav__list {
             position: absolute;
             background: $color-white;
@@ -124,7 +124,7 @@ nav[role="navigation"] {
     // Breakpoint at least
     // ----------------
 
-    @include breakpoint(break-4) {
+    @include breakpoint(break-2) {
         ul, li {
             display: inline-block;
         }
