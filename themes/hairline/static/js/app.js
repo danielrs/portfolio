@@ -547,8 +547,9 @@ function setupNavToggle() {
   var menuToggle = new _util.Element('#menu-toggle');
 
   menuToggle.first().addEventListener('click', function () {
-    nav.toggleClass('ASD');
+    nav.toggleClass('nav--hidden');
   });
+  nav.addClass('nav--hidden');
 }
 });
 

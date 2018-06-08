@@ -14,6 +14,7 @@ function setupNavToggle() {
   const menuToggle = new Element('#menu-toggle');
 
   menuToggle.first().addEventListener('click', function() {
-    nav.toggleClass('ASD');
+    nav.toggleClass('nav--hidden');
   });
+  nav.addClass('nav--hidden');
 }

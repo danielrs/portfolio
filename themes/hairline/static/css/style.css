@@ -768,8 +768,10 @@ html, body {
   margin-top: 0; }
 
 nav[role="navigation"] {
+  position: relative;
   max-width: none;
   margin: 0;
+  background: #fff;
   border-bottom: 1px solid #ebebeb; }
   nav[role="navigation"]:after {
     content: "";
@@ -780,11 +782,23 @@ nav[role="navigation"] {
     padding: 0; }
   nav[role="navigation"] ul, nav[role="navigation"] li {
     list-style: none;
-    display: inline-block;
     margin: 0;
     padding: 0; }
+  nav[role="navigation"] #menu-toggle {
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none; }
+    nav[role="navigation"] #menu-toggle:hover {
+      background: whitesmoke; }
+    nav[role="navigation"] #menu-toggle:active {
+      background: #ebebeb; }
   nav[role="navigation"] .nav__brand {
-    float: left;
+    display: inline-block;
     font-size: 1.5em;
     line-height: 1.5em;
     padding: 0.5em;
@@ -792,8 +806,11 @@ nav[role="navigation"] {
     text-decoration: none;
     color: #444; }
   nav[role="navigation"] .nav__list {
-    float: right;
-    margin-right: 2em; }
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center; }
     nav[role="navigation"] .nav__list a.nav__list__item {
       position: relative;
       display: inline-block;
@@ -816,19 +833,32 @@ nav[role="navigation"] {
       left: 50%;
       background: #444;
       transform: translateX(-50%); }
-  nav[role="navigation"] #menu-toggle {
-    float: left;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0.5em;
-    cursor: pointer;
-    background: none;
-    border: none;
-    outline: none; }
-    nav[role="navigation"] #menu-toggle:hover {
-      background: whitesmoke; }
-    nav[role="navigation"] #menu-toggle:active {
-      background: #ebebeb; }
+  @media (max-width: 79.9375em) {
+    nav[role="navigation"] .nav__list {
+      position: absolute;
+      background: #fff;
+      border-bottom: 1px solid #ebebeb;
+      transition: left 0.25s, right 0.25s;
+      z-index: 10; }
+    nav[role="navigation"].nav--hidden .nav__list {
+      left: -100%;
+      right: 100%; } }
+  @media screen and (min-width: 80em) {
+    nav[role="navigation"] ul, nav[role="navigation"] li {
+      display: inline-block; }
+    nav[role="navigation"] #menu-toggle {
+      float: left; }
+    nav[role="navigation"] .nav__brand {
+      float: left; }
+    nav[role="navigation"] .nav__list {
+      display: inline-block;
+      float: right;
+      margin-right: 2em;
+      text-align: initial; }
+      nav[role="navigation"] .nav__list a.nav__list__item {
+        margin: 0; }
+    nav[role="navigation"] #menu-toggle {
+      display: none; } }
 
 .project-list {
   margin-top: 1.5em; }
