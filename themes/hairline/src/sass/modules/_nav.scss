@@ -71,6 +71,24 @@ nav[role="navigation"] {
             transform: translateX(-50%);
         }
     }
+
+    #menu-toggle {
+        float: left;
+        font-size: $nav-line-height;
+        line-height: $nav-line-height;
+        padding: $nav-padding;
+
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background: $color-light-gray;
+        }
+
+        &:active {
+            background: $color-gray;
+        }
+    }
 }
-
-

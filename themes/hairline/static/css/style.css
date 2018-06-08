@@ -816,6 +816,19 @@ nav[role="navigation"] {
       left: 50%;
       background: #444;
       transform: translateX(-50%); }
+  nav[role="navigation"] #menu-toggle {
+    float: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none; }
+    nav[role="navigation"] #menu-toggle:hover {
+      background: whitesmoke; }
+    nav[role="navigation"] #menu-toggle:active {
+      background: #ebebeb; }
 
 .project-list {
   margin-top: 1.5em; }

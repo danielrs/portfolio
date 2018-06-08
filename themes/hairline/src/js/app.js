@@ -4,8 +4,8 @@ function handleDOMContentLoaded() {
   const viewName = document.getElementsByTagName('body')[0].getAttribute('data-js-view-name');
   const ViewClass = loadView(viewName);
   const view = new ViewClass();
-  view.mount();
   window.currentView = view;
+  window.currentView.mount();
 }
 
 function handleDOMContentUnload() {

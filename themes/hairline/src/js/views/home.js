@@ -2,6 +2,8 @@ import MainView from './main';
 
 export default class HomeView extends MainView {
   mount() {
+    super.mount();
+
     const sentences = [].slice.call(
       document.querySelectorAll('#tagline-comments li')).map(n => n.innerHTML
     );

@@ -160,8 +160,8 @@ function handleDOMContentLoaded() {
   var viewName = document.getElementsByTagName('body')[0].getAttribute('data-js-view-name');
   var ViewClass = (0, _loader2.default)(viewName);
   var view = new ViewClass();
-  view.mount();
   window.currentView = view;
+  window.currentView.mount();
 }
 
 function handleDOMContentUnload() {
@@ -173,7 +173,219 @@ handleDOMContentLoaded();
 window.addEventListener('unload', handleDOMContentUnload, false);
 });
 
-require.register("js/views/blog.js", function(exports, require, module) {
+require.register("js/util/classToggler.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _element = require('./element');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ClassToggler = function () {
+  function ClassToggler(selector) {
+    _classCallCheck(this, ClassToggler);
+
+    this.el = new _element.Element(selector);
+    this.onClasses = '';
+    this.offClasses = '';
+  }
+
+  _createClass(ClassToggler, [{
+    key: 'on',
+    value: function on(classes) {
+      this.onClasses = classes;
+      this.el.removeClass(this.offClasses);
+      this.el.addClass(this.onClasses);
+    }
+  }, {
+    key: 'off',
+    value: function off(classes) {
+      this.offClasses = classes;
+      this.el.removeClass(this.onClasses);
+      this.el.addClass(this.offClasses);
+    }
+  }]);
+
+  return ClassToggler;
+}();
+
+exports.default = ClassToggler;
+});
+
+;require.register("js/util/element.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.toggleClass = exports.removeClass = exports.addClass = exports.hasClass = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _index = require('./index');
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Helper functions for manipulating classes.
+
+function _hasClass(el, classname) {
+  if (el.classList) {
+    return el.classList.contains(classname);
+  }
+
+  return new RegExp('(^| )' + classname + '( |$)', 'gi').test(el.classname);
+}
+
+exports.hasClass = _hasClass;
+function _addClass(el, classname) {
+  if (el.classList) {
+    el.classList.add(classname);
+    return;
+  }
+
+  el.classname += ' ' + classname;
+}
+
+exports.addClass = _addClass;
+function _removeClass(el, classname) {
+  if (el.classList) {
+    el.classList.remove(classname);
+    return;
+  }
+
+  el.classname = el.classname.replace(new RegExp('(^|\\b)' + classname.split(' ').join('|') + '(\\b|$)', 'gi', ' '));
+}
+
+exports.removeClass = _removeClass;
+function _toggleClass(el, classname) {
+  _hasClass(el, classname) ? _removeClass(el, classname) : _addClass(el, classname);
+}
+
+// Class manipulation on multiple elements.
+exports.toggleClass = _toggleClass;
+
+var Element = function () {
+  function Element(selector) {
+    _classCallCheck(this, Element);
+
+    this.elements = document.querySelectorAll(selector);
+  }
+
+  _createClass(Element, [{
+    key: 'first',
+    value: function first() {
+      return this.elements[0];
+    }
+  }, {
+    key: 'hasClass',
+    value: function hasClass(classes) {
+      if (this.elements.length == 0) {
+        return false;
+      }
+
+      var el = this.elements[0];
+      return classes.split(' ').some(function (c) {
+        return _hasClass(el, c);
+      });
+    }
+  }, {
+    key: 'addClass',
+    value: function addClass(classes) {
+      if (!classes) {
+        return;
+      }
+
+      classes = classes.split(' ');
+      (0, _index.map)(this.elements, function (el) {
+        (0, _index.map)(classes, function (c) {
+          return _addClass(el, c);
+        });
+      });
+    }
+  }, {
+    key: 'removeClass',
+    value: function removeClass(classes) {
+      if (!classes) {
+        return;
+      }
+
+      classes = classes.split(' ');
+      (0, _index.map)(this.elements, function (el) {
+        (0, _index.map)(classes, function (c) {
+          return _removeClass(el, c);
+        });
+      });
+    }
+  }, {
+    key: 'toggleClass',
+    value: function toggleClass(classes) {
+      if (!classes) {
+        return;
+      }
+
+      classes = classes.split(' ');
+      (0, _index.map)(this.elements, function (el) {
+        (0, _index.map)(classes, function (c) {
+          return _toggleClass(el, c);
+        });
+      });
+    }
+  }]);
+
+  return Element;
+}();
+
+exports.default = Element;
+});
+
+;require.register("js/util/index.js", function(exports, require, module) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ClassToggler = exports.Element = undefined;
+exports.map = map;
+exports.isMobile = isMobile;
+
+var _element = require('./element');
+
+var _element2 = _interopRequireDefault(_element);
+
+var _classToggler = require('./classToggler');
+
+var _classToggler2 = _interopRequireDefault(_classToggler);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Import and re-export.
+
+exports.Element = _element2.default;
+exports.ClassToggler = _classToggler2.default;
+
+// ----------------
+// Functions
+// ----------------
+
+// Calls the function f on each element of the given array.
+// returning a new array with the new values.
+
+function map(array, f) {
+  return Array.prototype.map.call(array, f);
+}
+
+function isMobile() {
+  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  );
+}
+});
+
+;require.register("js/views/blog.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -216,6 +428,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 var _main = require('./main');
 
 var _main2 = _interopRequireDefault(_main);
@@ -240,6 +454,8 @@ var HomeView = function (_MainView) {
   _createClass(HomeView, [{
     key: 'mount',
     value: function mount() {
+      _get(HomeView.prototype.__proto__ || Object.getPrototypeOf(HomeView.prototype), 'mount', this).call(this);
+
       var sentences = [].slice.call(document.querySelectorAll('#tagline-comments li')).map(function (n) {
         return n.innerHTML;
       });
@@ -292,13 +508,15 @@ function loadView(viewName) {
 });
 
 ;require.register("js/views/main.js", function(exports, require, module) {
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _util = require('../util');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -308,10 +526,12 @@ var MainView = function () {
   }
 
   _createClass(MainView, [{
-    key: "mount",
-    value: function mount() {}
+    key: 'mount',
+    value: function mount() {
+      setupNavToggle();
+    }
   }, {
-    key: "unmount",
+    key: 'unmount',
     value: function unmount() {}
   }]);
 
@@ -319,6 +539,17 @@ var MainView = function () {
 }();
 
 exports.default = MainView;
+
+
+function setupNavToggle() {
+  var nav = new _util.Element('#nav');
+  var navlist = new _util.Element('#nav .nav__list');
+  var menuToggle = new _util.Element('#menu-toggle');
+
+  menuToggle.first().addEventListener('click', function () {
+    nav.toggleClass('ASD');
+  });
+}
 });
 
 ;require.register("js/views/projects.js", function(exports, require, module) {
