@@ -592,6 +592,9 @@ em {
   .monolink:active, .project-card .project-card__links a:active {
     color: #444444; }
 
+code {
+  margin-bottom: 0; }
+
 .container {
   max-width: 1024px;
   margin: 3em auto 0;
