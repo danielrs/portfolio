@@ -2,10 +2,16 @@
     position: relative;
     margin: 0;
     padding: 2em;
+    z-index: -1;
+    top: -$nav-height;
+
     width: 100%;
-    max-width: none;
     height: 560px;
+    height: 100vh;
     min-height: 10em;
+    max-width: none;
+
+    font-size: .75em;
 
     overflow: hidden;
 
@@ -35,6 +41,18 @@
     }
 
     .mega-brand__content {
+    }
+
+    // ----------------
+    // Breakoints
+    // ----------------
+
+    @include breakpoint(break-2) {
+      font-size: .875em;
+    }
+
+    @include breakpoint(break-3) {
+      font-size: 1em;
     }
 }
 

@@ -45,3 +45,9 @@ $base-font-size: 115;
 $base-font-size-desktop: 125;
 $edit-mode: false;
 $max-width: 100%;
+
+// Site specific
+
+$nav-line-height: 1.5rem;
+$nav-padding: 1rem;
+$nav-height: $nav-line-height + $nav-padding * 2;

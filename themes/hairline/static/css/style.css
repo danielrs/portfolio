@@ -689,10 +689,14 @@ div.highlight, div.highlight pre {
   position: relative;
   margin: 0;
   padding: 2em;
+  z-index: -1;
+  top: -3.5rem;
   width: 100%;
-  max-width: none;
   height: 560px;
+  height: 100vh;
   min-height: 10em;
+  max-width: none;
+  font-size: .75em;
   overflow: hidden; }
   .mega-brand * {
     margin: 0; }
@@ -710,6 +714,12 @@ div.highlight, div.highlight pre {
       font-family: 'Pacifico';
       font-weight: 300;
       white-space: nowrap; }
+  @media screen and (min-width: 50em) {
+    .mega-brand {
+      font-size: .875em; } }
+  @media screen and (min-width: 64em) {
+    .mega-brand {
+      font-size: 1em; } }
 
 #avatar {
   width: 7em;
@@ -788,10 +798,10 @@ nav[role="navigation"] {
     margin: 0;
     padding: 0; }
   nav[role="navigation"] #menu-toggle {
-    display: inline-block;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0.5em;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -801,10 +811,10 @@ nav[role="navigation"] {
     nav[role="navigation"] #menu-toggle:active {
       background: #ebebeb; }
   nav[role="navigation"] .nav__brand {
-    display: inline-block;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0.5em;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem;
     font-family: 'Pacifico';
     text-decoration: none;
     color: #444; }
@@ -817,8 +827,8 @@ nav[role="navigation"] {
     nav[role="navigation"] .nav__list a.nav__list__item {
       position: relative;
       display: inline-block;
-      line-height: 1.25em;
-      padding: 1.25em 1em;
+      line-height: 1.75rem;
+      padding: 0.875rem 1em;
       font-family: "Lato";
       text-decoration: none;
       color: #d6d6d6;
@@ -849,10 +859,6 @@ nav[role="navigation"] {
   @media screen and (min-width: 50em) {
     nav[role="navigation"] ul, nav[role="navigation"] li {
       display: inline-block; }
-    nav[role="navigation"] #menu-toggle {
-      float: left; }
-    nav[role="navigation"] .nav__brand {
-      float: left; }
     nav[role="navigation"] .nav__list {
       display: inline-block;
       float: right;

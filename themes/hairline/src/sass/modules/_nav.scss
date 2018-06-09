@@ -1,10 +1,6 @@
 nav[role="navigation"] {
     @include clearfix;
 
-    $nav-line-height: 1.5em;
-    $nav-padding: .5em;
-    $nav-height: $nav-line-height + $nav-padding * 2;
-
     position: relative;
     max-width: none;
     margin: 0;
@@ -24,7 +20,7 @@ nav[role="navigation"] {
     }
 
     #menu-toggle {
-        display: inline-block;
+        float: left;
 
         font-size: $nav-line-height;
         line-height: $nav-line-height;
@@ -45,7 +41,7 @@ nav[role="navigation"] {
     }
 
     .nav__brand {
-        display: inline-block;
+        float: left;
 
         font-size: $nav-line-height;
         line-height: $nav-line-height;
@@ -68,7 +64,7 @@ nav[role="navigation"] {
             position: relative;
             display: inline-block;
             line-height: $nav-height / 2;
-            padding: ($nav-height / 2) 1em;
+            padding: ($nav-height / 4) 1em;
 
             font-family: map-get($fonts, sans-serif);
             text-decoration: none;
@@ -127,14 +123,6 @@ nav[role="navigation"] {
     @include breakpoint(break-2) {
         ul, li {
             display: inline-block;
-        }
-
-        #menu-toggle {
-            float: left;
-        }
-
-        .nav__brand {
-            float: left;
         }
 
         .nav__list {
