@@ -24,13 +24,4 @@ I have found that what works best for most people, even if it sounds obvious, is
 
 * Do you work as a full-stack web developer but wish to become a low-level systems programmer? Play around with *C*, *C++*, or *Rust* and make some apps; a new job doing what you love could be around the corner.
 
-An extra (but **important**) tip: don't neglect the theory behind programming in general. From the top of my head these are the topics I can think of:
-
-* Graph theory
-* Algorithm analysis
-* Set theory
-* Probability
-* Statistics
-* Linear Algebra
-
-Why? Those concepts are present in all programming languages, and they are gonna be useful for the rest of our career.
+An extra (but **important**) tip: don't neglect the theory behind programming in general. From the top of my head these are the topics I can think of: *Graph theory*, *algorithm analysis*, *set theory*, *probability*, *statistics*, and *linear algebra*. Why? Those concepts are present in all programming languages, and they are gonna be useful for the rest of our career.
