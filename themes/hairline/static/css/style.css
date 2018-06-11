@@ -919,53 +919,50 @@ nav[role="navigation"] {
       .project-card .project-card__links a:last-of-type {
         margin-right: 0; }
 
-.project-post:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.project-post h1 {
-  font-family: "Merriweather";
-  margin-bottom: 0; }
-
-.project-post header time {
-  display: block;
-  font-style: italic;
-  margin-bottom: 0; }
-
-.project-post header .tag-list {
-  margin-top: .5em; }
-
-.project-post header i {
-  margin-bottom: 0; }
-
-@media screen and (min-width: 64em) {
-  .project-post aside {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 22.75%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .project-post aside:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .project-post aside:last-child {
-      margin-right: 0%; }
-  .project-post main {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 74.25%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .project-post main:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .project-post main:last-child {
-      margin-right: 0%; } }
+.project-post {
+  width: auto; }
+  .project-post:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .project-post h1 {
+    font-family: "Merriweather";
+    margin-bottom: 0; }
+  .project-post header time {
+    display: block;
+    font-style: italic;
+    margin-bottom: 0; }
+  .project-post header .tag-list {
+    margin-top: .5em; }
+  .project-post header i {
+    margin-bottom: 0; }
+  @media screen and (min-width: 64em) {
+    .project-post aside {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 22.75%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .project-post aside:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .project-post aside:last-child {
+        margin-right: 0%; }
+    .project-post main {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 74.25%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .project-post main:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .project-post main:last-child {
+        margin-right: 0%; } }
 
 .blog-item {
   margin-bottom: 60px;

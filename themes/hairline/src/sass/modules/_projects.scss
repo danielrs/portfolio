@@ -53,6 +53,7 @@
 
 .project-post {
     @include clearfix;
+    width: auto;
 
     h1 {
         font-family: map-get($fonts, serif);
