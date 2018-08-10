@@ -14,8 +14,8 @@ author = "Daniel Rivas"
 githubUser = "danielrs"
 
 [params.tagline]
-title = "Software Developer"
-comments = ["Hi", "I'm Daniel", "I take ideas", "and make them real", "I'm a..", "Software Developer"]
+title = "Software engineer"
+comments = ["Hi", "I'm Daniel", "I take ideas", "and make them real", "I'm a..", "Software engineer"]
 
 [[params.social]]
 url = "https://github.com/danielrs"
