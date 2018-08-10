@@ -1,3 +1,11 @@
+body {
+    font-family: map-get($fonts, sans-serif);
+}
+
+h1, h2, h3, h4 {
+    font-family: map-get($fonts, serif);
+}
+
 strong {
     font-weight: 700;
 }

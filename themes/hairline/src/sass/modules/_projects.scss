@@ -15,8 +15,6 @@
     margin-bottom: $magic-number;
     border-radius: 4px;
 
-    font-family: map-get($fonts, sans-serif) !important;
-
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
@@ -56,7 +54,8 @@
     width: auto;
 
     h1 {
-        font-family: map-get($fonts, serif);
+        @include font-size(2);
+        @include line-height(1.75);
         margin-bottom: 0;
     }
 

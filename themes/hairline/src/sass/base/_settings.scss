@@ -34,20 +34,20 @@ $golden-ratio: 1.61803398875;
 
 $fonts: (
     serif: 'Merriweather',
-    sans-serif: 'Lato',
+    sans-serif: 'Source Sans Pro',
     monospace: 'Inconsolata'
 ) !default;
 
 // Gutenberg overrides
 
 $color-font-body: #444;
-$base-font-size: 105;
-$base-font-size-desktop: 115;
+$base-font-size: 120;
+$base-font-size-desktop: 125;
 $edit-mode: false;
 $max-width: 100%;
 
 // Site specific
 
 $nav-line-height: 1.5rem;
-$nav-padding: 1rem;
+$nav-padding: 0.90rem;
 $nav-height: $nav-line-height + $nav-padding * 2;
