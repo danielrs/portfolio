@@ -32,3 +32,7 @@ url = "/daniel-rivas.pdf"
 title = "Résumé"
 icon = "fas fa-file-alt"
 blank = true
+
+[params.home]
+projectsTitle = "Open-source contributions"
+postsTitle = "Latest posts"

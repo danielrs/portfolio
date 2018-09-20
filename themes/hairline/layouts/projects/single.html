@@ -12,11 +12,9 @@
                             {{end}}
                         {{end}}
                     </ul>
-                    {{with .Params.ProjectUrl}}
-                        <a href="{{.}}" title="Project homepage">
-                            <i class="fas fa-code"></i> Homepage
-                       </a>
-                    {{end}}
+
+                    {{partial "projects/github-button" .}}
+
                     <span class="separator">&#8729;</span>
                 </header>
             </aside>

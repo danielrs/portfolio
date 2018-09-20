@@ -43,7 +43,7 @@
     <main class="main container typeset">
         {{.Content}}
 
-        <h3>Preferred projects</h3>
+        <h3>{{.Site.Params.Home.projectsTitle}}</h3>
         <div class="project-list">
             {{range first 4 (where .Data.Pages "Section" "projects")}}
                 {{partial "projects/card" .}}
@@ -52,7 +52,7 @@
     </main>
 
     <main class="main container container--small typeset">
-         <h3>Latests posts</h3>
+        <h3>{{.Site.Params.Home.postsTitle}}</h3>
          <div class="post-list">
              {{range first 4 (where .Data.Pages "Section" "blog")}}
                 {{partial "blog/item" .}}

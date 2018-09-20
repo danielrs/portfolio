@@ -5,7 +5,8 @@ description: A distributed key-value data store.
 tags: ['java', 'kotlin', 'db', 'in-memory-db']
 weight: 2
 
-projectUrl: https://github.com/danielrs/botellier
+githubUser: danielrs
+githubRepo: dobro
 ---
 
 [kotlin]: https://kotlinlang.org/

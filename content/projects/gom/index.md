@@ -3,9 +3,10 @@ title: "gom"
 date: 2018-05-11T21:50:30-05:00
 description: API mocking and data server.
 tags: ['go', 'api', 'generator']
-weight: 1
+weight: 3
 
-projectUrl: https://github.com/danielrs/gom
+githubUser: danielrs
+githubRepo: gom
 ---
 
 When working in a new project, back-end and front-end developers often go hand in hand; even more if the front-end of the application makes heavy use of the API that back-end developers take care of. For simple applications, this is often not a problem, as the front-end developers just wait for the API updates and modify their side of the application accordingly.
