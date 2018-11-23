@@ -33,9 +33,10 @@ $golden-ratio: 1.61803398875;
 // Fonts
 
 $fonts: (
-    serif: 'Merriweather',
-    sans-serif: 'Source Sans Pro',
-    monospace: 'Inconsolata'
+    title: 'Bitter',
+    body: 'Bitter',
+    alt: 'Source Sans Pro',
+    monospace: 'Inconsolata',
 ) !default;
 
 // Gutenberg overrides

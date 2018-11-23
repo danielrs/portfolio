@@ -1,4 +1,5 @@
 // See http://brunch.io for documentation.
+
 exports.files = {
   javascripts: {
     joinTo: {
@@ -20,16 +21,16 @@ exports.files = {
 exports.paths = {
   public: '../static',
   watched: ['js', 'sass', 'vendor']
-}
+};
 
 exports.modules = {
   autoRequire: {
     'js/app.js': ['js/app']
   }
-}
+};
 
 exports.plugins = {
-  babel: {presets: ['latest', 'react']},
+  babel: {presets: ['@babel/preset-env', '@babel/preset-react']},
 
   postcss: {
     processors: [
@@ -38,10 +39,10 @@ exports.plugins = {
   },
 
   sass: {
+    mode: 'native',
     options: {
       includePaths: [].concat(
         'node_modules/jeet',
-        'node_modules/sassline/assets/sass',
         'node_modules/gutenberg-web-type/src/style'
       )
     }
@@ -49,3 +50,4 @@ exports.plugins = {
 
   hugo: {sourceFolder: './'}
 };
+

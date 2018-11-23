@@ -1,9 +1,9 @@
 body {
-    font-family: map-get($fonts, sans-serif);
+    font-family: map-get($fonts, body);
 }
 
 h1, h2, h3, h4 {
-    font-family: map-get($fonts, serif);
+    font-family: map-get($fonts, title);
 }
 
 strong {
@@ -32,4 +32,10 @@ em {
 
 code {
     margin-bottom: 0;
+}
+
+// overrides gutenberg styles for links.
+
+a {
+    transition: none;
 }

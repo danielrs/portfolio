@@ -1,3 +1,4 @@
+import Typing from '@bower_components/typing.js';
 import MainView from './main';
 
 export default class HomeView extends MainView {

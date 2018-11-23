@@ -58,6 +58,7 @@ nav[role="navigation"] {
         left: 0;
         right: 0;
 
+        font-family: map-get($fonts, alt);
         text-align: center;
 
         a.nav__list__item {

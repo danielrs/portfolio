@@ -44,7 +44,7 @@ figure {
 }
 
 .date {
-    font-family: map-get($fonts, sans-serif);
+    font-family: map-get($fonts, alt);
     font-style: italic;
     color: $color-font-light;
 }
