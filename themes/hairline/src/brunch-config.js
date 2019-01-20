@@ -47,7 +47,5 @@ exports.plugins = {
       )
     }
   },
-
-  hugo: {sourceFolder: './'}
 };
 

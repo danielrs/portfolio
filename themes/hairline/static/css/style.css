@@ -34,32 +34,32 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
   background-position: left top;
   background-repeat: repeat;
-  background-size: 100% 31px;
-  background-size: 100% 1.61458rem; }
+  background-size: 100% 29px;
+  background-size: 100% 1.64773rem; }
   @media screen and (min-width: 105% em) {
     .grid, .grid-double {
-      background-size: 100% 34px;
-      background-size: 100% 1.7rem; } }
+      background-size: 100% 31px;
+      background-size: 100% 1.68478rem; } }
 
 .grid-double {
-  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px); }
+  background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 14.5px, rgba(0, 170, 255, 0.2) 14.5px, transparent 15.5px, transparent 29px); }
   @media screen and (min-width: 105% em) {
     .grid-double {
-      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 17px, rgba(0, 170, 255, 0.2) 17px, transparent 18px, transparent 34px); } }
+      background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px); } }
 
 .toggleWrapper {
   display: none;
   position: fixed;
-  top: 31px;
-  right: 31px;
+  top: 29px;
+  right: 29px;
   background-color: #231F20;
   border-radius: 25px;
   padding: 0 10px 0 20px;
   height: 32px; }
   @media screen and (min-width: 105% em) {
     .toggleWrapper {
-      right: 34px;
-      top: 34px; } }
+      right: 31px;
+      top: 31px; } }
 
 .btnToggleGrid {
   background: url("../../assets/images/grid-icons.png") top right no-repeat;
@@ -76,8 +76,8 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   color: #fff; }
   @media screen and (min-width: 105% em) {
     .btnToggleGrid {
-      top: 34px;
-      right: 34px; } }
+      top: 31px;
+      right: 31px; } }
   .btnToggleGrid:hover {
     color: #fff; }
   .btnToggleGrid:active {
@@ -103,29 +103,29 @@ aside {
 
 html {
   box-sizing: border-box;
-  font-size: 19.2px;
-  font-size: 120%;
+  font-size: 17.6px;
+  font-size: 110%;
   font-family: Merriweather, Georgia, serif;
   color: #444;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
   @media screen and (min-width: 105% em) {
     html {
-      font-size: 20px;
-      font-size: 1.25rem; } }
+      font-size: 18.4px;
+      font-size: 1.15rem; } }
 
 * {
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin: 0px 0px 31px;
-  margin: 0rem 0rem 1.61458rem; }
+  line-height: 29px;
+  line-height: 1.64773rem;
+  margin: 0px 0px 29px;
+  margin: 0rem 0rem 1.64773rem; }
   @media screen and (min-width: 105% em) {
     * {
-      line-height: 34px;
-      line-height: 1.7rem;
-      margin-bottom: 34px;
-      margin-bottom: 1.7rem;
-      max-width: 2000%px;
+      line-height: 31px;
+      line-height: 1.68478rem;
+      margin-bottom: 31px;
+      margin-bottom: 1.68478rem;
+      max-width: 1840%px;
       max-width: 100%rem;
       margin-left: auto;
       margin-right: auto; } }
@@ -176,7 +176,7 @@ article {
   width: 80%; }
   @media screen and (min-width: 105% em) {
     article {
-      max-width: 3000%px;
+      max-width: 2760%px;
       max-width: 150%rem; } }
 
 audio {
@@ -200,13 +200,13 @@ samp {
   font-family: monospace, monospace; }
 
 code {
-  padding: 31px;
-  padding: 1.61458rem;
+  padding: 29px;
+  padding: 1.64773rem;
   display: block; }
   @media screen and (min-width: 105% em) {
     code {
-      padding: 34px;
-      padding: 1.7rem; } }
+      padding: 31px;
+      padding: 1.68478rem; } }
 
 details {
   display: block; }
@@ -215,8 +215,8 @@ summary {
   display: block; }
 
 figcaption {
-  line-height: 31px;
-  line-height: 1.61458rem;
+  line-height: 29px;
+  line-height: 1.64773rem;
   color: #444;
   display: block;
   font-size: .8125rem;
@@ -225,8 +225,8 @@ figcaption {
   text-align: center; }
   @media screen and (min-width: 105% em) {
     figcaption {
-      line-height: 34px;
-      line-height: 1.7rem;
+      line-height: 31px;
+      line-height: 1.68478rem;
       margin-bottom: 0; } }
 
 figure {
@@ -235,10 +235,10 @@ figure {
 @media screen and (min-width: 105% em) {
   figure.floatLeft,
   figure.floatRight {
-    max-width: 1000%px;
+    max-width: 920%px;
     max-width: 50%rem;
-    padding: 0px 34px;
-    padding: 0rem 1.7rem; } }
+    padding: 0px 31px;
+    padding: 0rem 1.68478rem; } }
 
 @media screen and (min-width: 105% em) {
   figure.floatLeft blockquote,
@@ -250,156 +250,156 @@ figure {
 @media screen and (min-width: 105% em) {
   figure.floatLeft blockquote p,
   figure.floatRight blockquote p {
-    font-size: 23.04px;
+    font-size: 21.12px;
     font-size: 1.2rem;
-    line-height: 34px;
-    line-height: 1.7rem; } }
+    line-height: 31px;
+    line-height: 1.68478rem; } }
 
 /* Headings
    ========================================================================== */
 h1 {
-  font-size: 48px;
+  font-size: 44px;
   font-size: 2.5rem;
-  line-height: 62px;
-  line-height: 3.22917rem;
-  margin-top: 124px;
-  margin-top: 6.45833rem;
-  margin-bottom: 31px;
-  margin-bottom: 1.61458rem; }
+  line-height: 58px;
+  line-height: 3.29545rem;
+  margin-top: 116px;
+  margin-top: 6.59091rem;
+  margin-bottom: 29px;
+  margin-bottom: 1.64773rem; }
 
 h2 {
-  font-size: 32.4px;
+  font-size: 29.7px;
   font-size: 1.6875rem;
-  line-height: 46.5px;
-  line-height: 2.42188rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 43.5px;
+  line-height: 2.47159rem;
+  margin-top: 72.5px;
+  margin-top: 4.11932rem;
+  margin-bottom: 14.5px;
+  margin-bottom: 0.82386rem; }
 
 h3 {
-  font-size: 26.4px;
+  font-size: 24.2px;
   font-size: 1.375rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 62px;
-  margin-top: 3.22917rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 29px;
+  line-height: 1.64773rem;
+  margin-top: 58px;
+  margin-top: 3.29545rem;
+  margin-bottom: 14.5px;
+  margin-bottom: 0.82386rem; }
 
 h4 {
-  font-size: 23.04px;
+  font-size: 21.12px;
   font-size: 1.2rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 46.5px;
-  margin-top: 2.42188rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 29px;
+  line-height: 1.64773rem;
+  margin-top: 43.5px;
+  margin-top: 2.47159rem;
+  margin-bottom: 14.5px;
+  margin-bottom: 0.82386rem; }
 
 h5 {
-  font-size: 19.2px;
+  font-size: 17.6px;
   font-size: 1rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 29px;
+  line-height: 1.64773rem;
+  margin-top: 72.5px;
+  margin-top: 4.11932rem;
+  margin-bottom: 14.5px;
+  margin-bottom: 0.82386rem; }
 
 h6 {
-  font-size: 19.2px;
+  font-size: 17.6px;
   font-size: 1rem;
-  line-height: 31px;
-  line-height: 1.61458rem;
-  margin-top: 77.5px;
-  margin-top: 4.03646rem;
-  margin-bottom: 15.5px;
-  margin-bottom: 0.80729rem; }
+  line-height: 29px;
+  line-height: 1.64773rem;
+  margin-top: 72.5px;
+  margin-top: 4.11932rem;
+  margin-bottom: 14.5px;
+  margin-bottom: 0.82386rem; }
 
 @media screen and (min-width: 105% em) {
   h1 {
-    font-size: 48px;
+    font-size: 44px;
     font-size: 2.5rem;
-    line-height: 68px;
-    line-height: 3.4rem;
-    margin-top: 136px;
-    margin-top: 6.8rem;
-    margin-bottom: 34px;
-    margin-bottom: 1.7rem; }
+    line-height: 62px;
+    line-height: 3.36957rem;
+    margin-top: 124px;
+    margin-top: 6.73913rem;
+    margin-bottom: 31px;
+    margin-bottom: 1.68478rem; }
   h2 {
-    font-size: 32.4px;
+    font-size: 29.7px;
     font-size: 1.6875rem;
-    line-height: 51px;
-    line-height: 2.55rem;
-    margin-top: 85px;
-    margin-top: 4.25rem;
-    margin-bottom: 17px;
-    margin-bottom: 0.85rem; }
+    line-height: 46.5px;
+    line-height: 2.52717rem;
+    margin-top: 77.5px;
+    margin-top: 4.21196rem;
+    margin-bottom: 15.5px;
+    margin-bottom: 0.84239rem; }
   h3 {
-    font-size: 26.4px;
+    font-size: 24.2px;
     font-size: 1.375rem;
-    line-height: 34px;
-    line-height: 1.7rem;
-    margin-top: 68px;
-    margin-top: 3.4rem;
-    margin-bottom: 17px;
-    margin-bottom: 0.85rem; }
+    line-height: 31px;
+    line-height: 1.68478rem;
+    margin-top: 62px;
+    margin-top: 3.36957rem;
+    margin-bottom: 15.5px;
+    margin-bottom: 0.84239rem; }
   h4 {
-    font-size: 23.04px;
+    font-size: 21.12px;
     font-size: 1.2rem;
-    line-height: 34px;
-    line-height: 1.7rem;
-    margin-top: 51px;
-    margin-top: 2.55rem;
-    margin-bottom: 17px;
-    margin-bottom: 0.85rem; }
+    line-height: 31px;
+    line-height: 1.68478rem;
+    margin-top: 46.5px;
+    margin-top: 2.52717rem;
+    margin-bottom: 15.5px;
+    margin-bottom: 0.84239rem; }
   h5 {
-    font-size: 19.2px;
+    font-size: 17.6px;
     font-size: 1rem;
-    line-height: 34px;
-    line-height: 1.7rem;
-    margin-top: 85px;
-    margin-top: 4.25rem;
-    margin-bottom: 17px;
-    margin-bottom: 0.85rem; }
+    line-height: 31px;
+    line-height: 1.68478rem;
+    margin-top: 77.5px;
+    margin-top: 4.21196rem;
+    margin-bottom: 15.5px;
+    margin-bottom: 0.84239rem; }
   h6 {
-    font-size: 19.2px;
+    font-size: 17.6px;
     font-size: 1rem;
-    line-height: 34px;
-    line-height: 1.7rem;
-    margin-top: 85px;
-    margin-top: 4.25rem;
-    margin-bottom: 17px;
-    margin-bottom: 0.85rem; } }
+    line-height: 31px;
+    line-height: 1.68478rem;
+    margin-top: 77.5px;
+    margin-top: 4.21196rem;
+    margin-bottom: 15.5px;
+    margin-bottom: 0.84239rem; } }
 
 h1 + h2 {
-  margin-top: 31px;
-  margin-top: 1.61458rem; }
+  margin-top: 29px;
+  margin-top: 1.64773rem; }
   @media screen and (min-width: 105% em) {
     h1 + h2 {
-      margin-top: 34px;
-      margin-top: 1.7rem; } }
+      margin-top: 31px;
+      margin-top: 1.68478rem; } }
 
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  margin-top: 15.5px;
-  margin-top: 0.80729rem; }
+  margin-top: 14.5px;
+  margin-top: 0.82386rem; }
   @media screen and (min-width: 105% em) {
     h2 + h3,
     h3 + h4,
     h4 + h5 {
-      margin-top: 17px;
-      margin-top: 0.85rem; } }
+      margin-top: 15.5px;
+      margin-top: 0.84239rem; } }
 
 h5 + h6 {
-  margin-top: -15.5px;
-  margin-top: -0.80729rem; }
+  margin-top: -14.5px;
+  margin-top: -0.82386rem; }
   @media screen and (min-width: 105% em) {
     h5 + h6 {
-      margin-top: -17px;
-      margin-top: -0.85rem; } }
+      margin-top: -15.5px;
+      margin-top: -0.84239rem; } }
 
 h6 {
   font-style: italic;
@@ -409,35 +409,35 @@ hgroup {
   display: block; }
 
 hr {
-  margin-top: 62px;
-  margin-top: 3.22917rem;
-  margin-bottom: 62px;
-  margin-bottom: 3.22917rem;
+  margin-top: 58px;
+  margin-top: 3.29545rem;
+  margin-bottom: 58px;
+  margin-bottom: 3.29545rem;
   box-sizing: content-box;
   border: 0;
   color: #444;
   display: block;
-  height: 31px;
-  height: 1.61458rem;
+  height: 29px;
+  height: 1.64773rem;
   margin-right: auto;
   margin-left: auto;
-  background-size: 100% 31px;
-  background-size: 100% 1.61458rem;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #444 13.5px, #444 17.5px, transparent 17.5px, transparent 31px);
+  background-size: 100% 29px;
+  background-size: 100% 1.64773rem;
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 12.5px, #444 12.5px, #444 16.5px, transparent 16.5px, transparent 29px);
   width: 100px; }
   @media screen and (min-width: 105% em) {
     hr {
-      margin-top: 68px;
-      margin-top: 3.4rem;
-      margin-bottom: 68px;
-      margin-bottom: 3.4rem;
-      height: 34px;
-      height: 1.7rem; } }
+      margin-top: 62px;
+      margin-top: 3.36957rem;
+      margin-bottom: 62px;
+      margin-bottom: 3.36957rem;
+      height: 31px;
+      height: 1.68478rem; } }
   @media screen and (min-width: 105% em) {
     hr {
-      background-size: 100% 34px;
-      background-size: 100% 1.7rem;
-      background-image: linear-gradient(to bottom, transparent 1px, transparent 15px, #444 15px, #444 19px, transparent 19px, transparent 34px); } }
+      background-size: 100% 31px;
+      background-size: 100% 1.68478rem;
+      background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #444 13.5px, #444 17.5px, transparent 17.5px, transparent 31px); } }
 
 img {
   border: 0;
@@ -471,24 +471,24 @@ cite {
   font-style: normal; }
 
 figure blockquote {
-  padding: 31px 0px;
-  padding: 1.61458rem 0rem; }
+  padding: 29px 0px;
+  padding: 1.64773rem 0rem; }
   @media screen and (min-width: 105% em) {
     figure blockquote {
-      padding: 68px 0px 34px;
-      padding: 3.4rem 0rem 1.7rem;
+      padding: 62px 0px 31px;
+      padding: 3.36957rem 0rem 1.68478rem;
       text-align: center; } }
   figure blockquote p {
-    font-size: 32.4px;
+    font-size: 29.7px;
     font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.42188rem; }
+    line-height: 43.5px;
+    line-height: 2.47159rem; }
     @media screen and (min-width: 105% em) {
       figure blockquote p {
-        font-size: 32.4px;
+        font-size: 29.7px;
         font-size: 1.6875rem;
-        line-height: 51px;
-        line-height: 2.55rem; } }
+        line-height: 46.5px;
+        line-height: 2.52717rem; } }
 
 table {
   border-collapse: collapse;
@@ -529,13 +529,13 @@ mark {
   color: #000; }
 
 small {
-  line-height: 15.5px;
-  line-height: 0.80729rem;
+  line-height: 14.5px;
+  line-height: 0.82386rem;
   font-size: 70%; }
   @media screen and (min-width: 105% em) {
     small {
-      line-height: 17px;
-      line-height: 0.85rem; } }
+      line-height: 15.5px;
+      line-height: 0.84239rem; } }
 
 sub,
 sup {
@@ -553,7 +553,7 @@ sub {
 /* Paragraph
 ========================================================================== */
 .attention-grabber {
-  font-size: 23.04px;
+  font-size: 21.12px;
   font-size: 1.2rem; }
 
 .alignLeft {
@@ -610,8 +610,8 @@ a {
   margin: 3em auto 0;
   padding: 0 1.5em; }
   .container.container--main {
-    margin-top: 124px;
-    margin-top: 6.45833rem; }
+    margin-top: 116px;
+    margin-top: 6.59091rem; }
   .container.container--small {
     max-width: 800px; }
   .container.container--large {
@@ -682,8 +682,8 @@ figure {
       width: 100%; }
 
 .separator {
-  margin-top: 31px;
-  margin-top: 1.61458rem;
+  margin-top: 29px;
+  margin-top: 1.64773rem;
   display: block;
   text-align: center; }
 
@@ -934,10 +934,10 @@ nav[role="navigation"] {
     display: table;
     clear: both; }
   .project-post h1 {
-    font-size: 38.4px;
+    font-size: 35.2px;
     font-size: 2rem;
-    line-height: 54.25px;
-    line-height: 2.82552rem;
+    line-height: 50.75px;
+    line-height: 2.88352rem;
     margin-bottom: 0; }
   .project-post header time {
     display: block;
@@ -976,17 +976,17 @@ nav[role="navigation"] {
         margin-right: 0%; } }
 
 .blog-item {
-  margin-bottom: 62px;
-  margin-bottom: 3.22917rem; }
+  margin-bottom: 58px;
+  margin-bottom: 3.29545rem; }
   .blog-item em {
     color: #888; }
   .blog-item h1, .blog-item h2, .blog-item h3, .blog-item h4 {
-    font-size: 28.8px;
+    font-size: 26.4px;
     font-size: 1.5rem;
-    line-height: 38.75px;
-    line-height: 2.01823rem;
-    margin-bottom: 7.75px;
-    margin-bottom: 0.40365rem;
+    line-height: 36.25px;
+    line-height: 2.05966rem;
+    margin-bottom: 7.25px;
+    margin-bottom: 0.41193rem;
     margin-top: 0; }
     .blog-item h1 a, .blog-item h2 a, .blog-item h3 a, .blog-item h4 a {
       text-decoration: none; }
@@ -1002,23 +1002,23 @@ nav[role="navigation"] {
   .blog-post header {
     text-align: center; }
     .blog-post header h1 {
-      font-size: 38.4px;
+      font-size: 35.2px;
       font-size: 2rem;
-      line-height: 54.25px;
-      line-height: 2.82552rem;
+      line-height: 50.75px;
+      line-height: 2.88352rem;
       margin-bottom: 0; }
       @media (max-width: 50em) {
         .blog-post header h1 {
-          font-size: 28.8px;
+          font-size: 26.4px;
           font-size: 1.5rem;
-          line-height: 38.75px;
-          line-height: 2.01823rem; } }
+          line-height: 36.25px;
+          line-height: 2.05966rem; } }
     .blog-post header .tag-list {
-      margin-top: 15.5px;
-      margin-top: 0.80729rem; }
+      margin-top: 14.5px;
+      margin-top: 0.82386rem; }
     .blog-post header .separator {
-      margin-top: 31px;
-      margin-top: 1.61458rem;
+      margin-top: 29px;
+      margin-top: 1.64773rem;
       display: block;
       text-align: center; }
 
