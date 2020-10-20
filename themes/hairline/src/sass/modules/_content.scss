@@ -1,0 +1,54 @@
+.tag-list {
+    margin: 0;
+    padding: 0;
+}
+
+.tag {
+    display: inline-block;
+    margin: 0 .5em .5em 0;
+    padding: .5em .750em;
+    min-width: 50px;
+    border-radius: 5px;
+
+    font-size: .9em;
+    line-height: 1em;
+    font-family: map-get($fonts, monospace);
+    text-align: center;
+    color: lighten($color-link, 20%);
+
+    background: lighten($color-link, 40%);
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+figure {
+    font-size: .5em;
+
+    img {
+        margin: 0 auto;
+
+        @for $percent from 1 through 20 {
+            &.img--#{$percent*5} {
+                width: #{$percent*5}#{'%'};
+            }
+        }
+    }
+}
+
+.separator {
+    @include margin-top(1);
+    display: block;
+    text-align: center;
+}
+
+.date {
+    font-family: map-get($fonts, alt);
+    font-style: italic;
+    color: $color-font-light;
+}
+
+div.highlight, div.highlight pre {
+    border-radius: 4px;
+}

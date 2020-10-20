@@ -1,0 +1,38 @@
+baseURL = "https://danielrs.me/"
+languageCode = "en-us"
+title = "Daniel Rivas"
+copyright = "Daniel Rivas"
+
+sectionPagesMenu = "main"
+metaDataFormat = "toml"
+pygmentsStyle = "dracula"
+
+theme = "hairline"
+
+[params]
+author = "Daniel Rivas"
+githubUser = "danielrs"
+
+[params.tagline]
+title = "Software engineer"
+comments = ["Hi", "I'm Daniel", "I take ideas", "and make them real", "I'm a..", "Software engineer"]
+
+[[params.social]]
+url = "https://github.com/danielrs"
+title = "GitHub"
+icon = "fab fa-github"
+
+[[params.social]]
+url = "https://www.linkedin.com/in/ersdaniel"
+title = "LinkedIn"
+icon = "fab fa-linkedin"
+
+[[params.social]]
+url = "/daniel-rivas.pdf"
+title = "Résumé"
+icon = "fas fa-file-alt"
+blank = true
+
+[params.home]
+projectsTitle = "Open-source contributions"
+postsTitle = "Latest posts"

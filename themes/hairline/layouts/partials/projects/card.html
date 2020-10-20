@@ -1,0 +1,22 @@
+<section class="project-card">
+    <h1>
+        {{.Title}}
+    </h1>
+
+    {{with .Params.Tags}}
+        <div class="project-card__tags">
+            {{range .}}<span class="tag">{{.}}</span>{{end}}
+        </div>
+    {{end}}
+
+    {{partial "projects/github-button" .}}
+
+    <p>{{.Description}}</p>
+
+    <div class="project-card__links">
+        <a href="{{.URL}}" title="Project details">
+            See details
+        </a>
+
+    </div>
+</section>

@@ -1,0 +1,14 @@
+{{$params := .Params}}
+{{with $params.GithubUser}}
+    {{$user := .}}
+    {{with $params.GithubRepo}}
+        {{$repo := .}}
+        <a
+            class="github-button"
+            href="https://github.com/{{$user}}/{{$repo}}"
+            data-icon="octicon-star"
+            data-show-count="true"
+            aria-label="Star {{$user}}/{{$repo}} on GitHub">Star</a>
+    {{end}}
+{{end}}
+

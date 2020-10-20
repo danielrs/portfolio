@@ -1,0 +1,17 @@
+.container {
+    max-width: map-get($breakpoints, break-3) * 1px;
+    margin: $magic-number*2 auto 0;
+    padding: 0 $magic-number;
+
+    &.container--main {
+        @include margin-top(4);
+    }
+
+    &.container--small {
+        max-width: map-get($breakpoints, break-2) * 1px;
+    }
+
+    &.container--large {
+        max-width: map-get($breakpoints, break-4) * 1px;
+    }
+}

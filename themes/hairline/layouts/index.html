@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+    <div class="mega-brand">
+        <div class="mega-brand__container">
+            <div class="mega-brand__header">
+                {{with .Resources.GetMatch "avatar*"}}
+                    <img id="avatar" class="animated fadeInDown" src="{{.Permalink}}" alt="{{.Name}}" width=100% height=100%/>
+                {{end}}
+
+                <h1 class="animated fadeInDown">{{.Site.Title}}</h1>
+                {{with .Site.Params.Tagline }}
+
+                    <code id="tagline" class="animated fadeInDown">{{.title}}</code>
+                    {{with .comments}}
+                        <ul id="tagline-comments">
+                            {{range .}}<li>{{.}}</li>{{end}}
+                        </ul>
+                    {{end}}
+
+                {{end}}
+
+                <br />
+
+                {{with .Site.Params.Social}}
+                    <ul class="social">
+                    {{range .}}
+                        <li>
+                            <a href="{{.url}}" title="{{.title}}" {{if .blank}}target="_blank"{{end}}>
+                                {{with .icon}}
+                                <i class="{{.}}"></i>
+                                {{end}}
+                                {{.title}}{{if .blank}}&#x21B1;{{end}}
+                            </a>
+                        </li>
+                    {{end}}
+                    </ul>
+                {{end}}
+
+            </div>
+        </div>
+    </div>
+
+    <main class="main container typeset">
+        {{.Content}}
+
+        <h3>{{.Site.Params.Home.projectsTitle}}</h3>
+        <div class="project-list">
+            {{range first 4 (where .Data.Pages "Section" "projects")}}
+                {{partial "projects/card" .}}
+            {{end}}
+         </div>
+    </main>
+
+    <main class="main container container--small typeset">
+        <h3>{{.Site.Params.Home.postsTitle}}</h3>
+         <div class="post-list">
+             {{range first 4 (where .Data.Pages "Section" "blog")}}
+                {{partial "blog/item" .}}
+             {{end}}
+         </div>
+    </main>
+
+        <!-- <h3>Latest posts</h3> -->
+        <!-- {{range first 4 (where .Data.Pages.ByDate "Section" "blog")}} -->
+        <!--     <li>{{.Title}}</li> -->
+        <!-- {{end}} -->
+    </main>
+
+{{ end }}

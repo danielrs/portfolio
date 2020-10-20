@@ -1,0 +1,87 @@
+.project-list {
+    @include clearfix;
+    margin-top: $magic-number;
+
+    .project-card {
+        @include breakpoint('break-1') {
+            @include column(1/2, $cycle: 2);
+        };
+    }
+}
+
+.project-card {
+    border: 1px solid $color-dark-gray;
+    padding: $magic-number $magic-number;
+    margin-bottom: $magic-number;
+    border-radius: 4px;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    p {
+        margin: $magic-number/2 0 0 0;
+    }
+
+    .project-card__tags {
+        margin: $magic-number/2 0 0;
+
+        .tag {
+            font-size: .8em;
+        }
+    }
+
+    .project-card__links {
+        margin: $magic-number/1.5 0 0;
+
+        a {
+            @extend .monolink;
+            display: inline-block;
+            margin: 0 1em 0 0;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.project-post {
+    @include clearfix;
+    width: auto;
+
+    h1 {
+        @include font-size(2);
+        @include line-height(1.75);
+        margin-bottom: 0;
+    }
+
+    header {
+        time {
+            display: block;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .tag-list {
+            margin-top: .5em;
+        }
+
+        i {
+            margin-bottom: 0;
+        }
+    }
+
+    @include breakpoint('break-3') {
+        aside {
+            @include column(1/4);
+        }
+
+        main {
+            @include column(3/4);
+        }
+    }
+}

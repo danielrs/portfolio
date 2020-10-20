@@ -1,0 +1,21 @@
+{{define "main"}}
+    <main class="container container--small">
+        <article class="blog-post">
+            <header>
+                <h1>{{.Title}}</h1>
+                <time class="date" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
+                {{with .Params.Tags}}
+                    <div class="tag-list">
+                        {{range $i, $t := .}}
+                            <span class="tag">{{$t}}</span>
+                        {{end}}
+                    </div>
+                {{end}}
+                <span class="separator">&#8729;</span>
+            </header>
+            <main>
+                {{.Content}}
+            </main>
+        </article>
+    </main>
+{{end}}

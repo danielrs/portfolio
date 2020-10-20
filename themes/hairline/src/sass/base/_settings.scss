@@ -1,0 +1,54 @@
+// Colors
+
+$color-white: #fff;
+$color-light-gray: darken($color-white, 4%);
+$color-gray: darken($color-white, 8%);
+$color-dark-gray: darken($color-white, 16%);
+
+$color-link: #4078c0;
+
+// Animations
+
+$animation-very-slow: 1s;
+$animation-slow: .500s;
+$animation-normal: .250s;
+$animation-fast: .125s;
+$animation-very-fast: .100s;
+
+// Break points
+
+$breakpoints: (
+    break-0: 0,
+    break-1: 640,
+    break-2: 800,
+    break-3: 1024,
+    break-4: 1280
+) !default;
+
+// Constants
+
+$magic-number: 1.5em;
+$golden-ratio: 1.61803398875;
+
+// Fonts
+
+$fonts: (
+    title: 'Bitter',
+    body: 'Bitter',
+    alt: 'Source Sans Pro',
+    monospace: 'Inconsolata',
+) !default;
+
+// Gutenberg overrides
+
+$color-font-body: #444;
+$base-font-size: 110;
+$base-font-size-desktop: 115;
+$edit-mode: false;
+$max-width: 100%;
+
+// Site specific
+
+$nav-line-height: 1.5rem;
+$nav-padding: 0.90rem;
+$nav-height: $nav-line-height + $nav-padding * 2;

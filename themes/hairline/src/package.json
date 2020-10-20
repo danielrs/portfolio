@@ -1,0 +1,31 @@
+{
+  "name": "hairline",
+  "description": "Hairline theme for Hugo",
+  "private": true,
+  "author": "Brunch",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@bower_components/typing.js": "DanielRS/typing.js#^0.4",
+    "animate.css": "^3.7.0",
+    "auto-reload-brunch": "^2.7.1",
+    "autoprefixer": "^9.3.1",
+    "babel-brunch": "^7.0.0",
+    "bower-away": "^1.1.2",
+    "brunch": "^2.10.17",
+    "gutenberg-web-type": "^1.2.3",
+    "jeet": "^7.2.0",
+    "postcss-brunch": "^2.10.1",
+    "sass-brunch": "2.10.8",
+    "uglify-js-brunch": "^2.10.0"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
+}

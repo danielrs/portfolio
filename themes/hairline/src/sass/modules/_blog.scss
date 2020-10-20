@@ -1,0 +1,58 @@
+.blog-item {
+    @include margin-bottom(2);
+
+    em {
+        color: $color-font-light;
+    }
+
+    h1, h2, h3, h4 {
+        @include font-size(1.5);
+        @include line-height(1.25);
+        @include margin-bottom(.25);
+        margin-top: 0;
+
+        a {
+            text-decoration: none;
+            &:visited, &:hover, &:active {
+                color: $color-font-body;
+            }
+        }
+    }
+
+    .summary {
+        margin-bottom: 0;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.blog-post {
+    width: auto;
+
+    header {
+        text-align: center;
+
+        h1 {
+            @include font-size(2);
+            @include line-height(1.75);
+            margin-bottom: 0;
+
+            @include breakpoint($max: map-get($breakpoints, break-2)) {
+                @include font-size(1.5);
+                @include line-height(1.25);
+            }
+        }
+
+        .tag-list {
+            @include margin-top(.5);
+        }
+
+        .separator {
+            @include margin-top(1);
+            display: block;
+            text-align: center;
+        }
+    }
+}

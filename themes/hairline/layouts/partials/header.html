@@ -1,0 +1,19 @@
+<nav id="nav" role="navigation">
+    {{$currentPage := .}}
+    {{$activeClass := "nav__list__active"}}
+
+    <button id="menu-toggle" type="button">&#9776;</button>
+    <a class="nav__brand" href="/" title="home">{{.Site.Title}}</a>
+    <ul class="nav__list">
+        </li>
+    {{range .Site.Menus.main}}
+        <li>
+            <a class="nav__list__item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}} {{$activeClass}}{{end}}"
+           href="{{.URL}}"
+           title="{{.Title}}">
+            {{.Name}}
+        </a>
+        </li>
+    {{end}}
+    </ul>
+</nav>

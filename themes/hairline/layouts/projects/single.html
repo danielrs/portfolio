@@ -1,0 +1,26 @@
+{{define "main"}}
+    <main class="container">
+        <article class="project-post">
+            <h1>{{.Title}}</h1>
+            <aside>
+                <header>
+                    <time class="date" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "Jan 02, 2006"}}</time>
+                    <ul class="tag-list">
+                        {{with .Params.Tags}}
+                            {{range .}}
+                                <li class="tag">{{.}}</li>
+                            {{end}}
+                        {{end}}
+                    </ul>
+
+                    {{partial "projects/github-button" .}}
+
+                    <span class="separator">&#8729;</span>
+                </header>
+            </aside>
+            <main>
+                {{.Content}}
+            </main>
+        </article>
+    </main>
+{{end}}
