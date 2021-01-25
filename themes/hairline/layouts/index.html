@@ -45,7 +45,7 @@
 
         <h3>{{.Site.Params.Home.projectsTitle}}</h3>
         <div class="project-list">
-            {{range first 4 (where .Data.Pages "Section" "projects")}}
+            {{range first 4 (where .Site.RegularPages "Section" "projects")}}
                 {{partial "projects/card" .}}
             {{end}}
          </div>
@@ -54,14 +54,14 @@
     <main class="main container container--small typeset">
         <h3>{{.Site.Params.Home.postsTitle}}</h3>
          <div class="post-list">
-             {{range first 4 (where .Data.Pages "Section" "blog")}}
+             {{range first 4 (where .Site.RegularPages "Section" "blog")}}
                 {{partial "blog/item" .}}
              {{end}}
          </div>
     </main>
 
         <!-- <h3>Latest posts</h3> -->
-        <!-- {{range first 4 (where .Data.Pages.ByDate "Section" "blog")}} -->
+        <!-- {{range first 4 (where .Pages.ByDate "Section" "blog")}} -->
         <!--     <li>{{.Title}}</li> -->
         <!-- {{end}} -->
     </main>
