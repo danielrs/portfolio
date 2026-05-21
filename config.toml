@@ -3,11 +3,23 @@ languageCode = "en-us"
 title = "Daniel Rivas"
 copyright = "Daniel Rivas"
 
-sectionPagesMenu = "main"
 metaDataFormat = "toml"
 pygmentsStyle = "dracula"
 
 theme = "hairline"
+
+# sectionPagesMenu = "main"  # uncomment to auto-add all sections to nav
+
+[[menu.main]]
+name = "Projects"
+pageRef = "/projects"
+weight = 1
+
+# Uncomment to re-add blog to nav when ready:
+# [[menu.main]]
+# name = "Blog"
+# pageRef = "/blog"
+# weight = 2
 
 [params]
 author = "Daniel Rivas"
