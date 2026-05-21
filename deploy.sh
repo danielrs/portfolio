@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
-hugo -t hairline # if using a theme, replace with `hugo -t <YOURTHEME>`
+mise exec hugo -- hugo --theme hairline
 
 # Go To Public folder
 cd public
